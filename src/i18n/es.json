@@ -1,0 +1,331 @@
+{
+	"title": "COLONIAL INNOV – Creatividad y Tecnología en Videojuegos",
+	"description": "En COLONIAL INNOV damos vida digital a tus ideas: videojuegos, software a medida, mundos virtuales, animaciones y más.",
+	"keywords": "videojuegos, desarrollo, animación 3D, modelado, mundos virtuales, creatividad digital, software personalizado",
+	"author": "COLONIAL INNOV",
+	"sections": {
+		"header": {
+			"navLinks": [
+				"inicio",
+				"galería",
+				"servicios",
+				"experiencias",
+				"proyectos",
+				"faq",
+				"contacto"
+			]
+		},
+		"hero": {
+			"id": "inicio",
+			"title": "✨ Donde la creatividad cobra vida digital ✨",
+			"description": "En <span class=\"text-primary font-medium\">COLONIAL INNOV</span>, somos más que un estudio de desarrollo de videojuegos: somos creadores de experiencias interactivas, mundos virtuales y soluciones tecnológicas a medida.",
+			"button": "► Haz que tus ideas se hagan realidad"
+		},
+		"services": {
+			"id": "servicios",
+			"title": "¿Cómo Transformamos tus Ideas?",
+			"description": "Ofrecemos servicios especializados en tecnología, creatividad e innovación digital.",
+			"more": "Tanto si eres una empresa que busca una solución digital, un estudio que necesita apoyo creativo o técnico, o un soñador con una gran idea, <span class=\"text-primary font-semibold\">COLONIAL INNOV</span> es tu socio ideal.",
+			"services": [
+				{
+					"title": "🎮 Desarrollo de videojuegos",
+					"description": "Diseñamos experiencias interactivas para PC, móviles, consola y realidad virtual."
+				},
+				{
+					"title": "🖥️ Software personalizado",
+					"description": "Soluciones a medida para tus necesidades tecnológicas y creativas."
+				},
+				{
+					"title": "🎨 Animaciones 3D",
+					"description": "Motion graphics, cinemáticas y arte animado para videojuegos y más."
+				},
+				{
+					"title": "🧱 Modelado 3D",
+					"description": "Creación de personajes, objetos y escenarios con nivel profesional."
+				},
+				{
+					"title": "🌍 Mundos virtuales",
+					"description": "Diseño de entornos envolventes para experiencias inmersivas."
+				}
+			]
+		},
+		"experiences": {
+			"id": "experiencias",
+			"title": "🏆 Nuestra Experiencia 🏆",
+			"description": "Con más de <span class=\"text-primary font-semibold\">5 años de experiencia</span> en la industria creativa y tecnológica, en <strong>COLONIAL INNOV</strong> hemos cultivado un enfoque multidisciplinario que abarca desde el <span class=\"text-secondary\">desarrollo de videojuegos</span> hasta la creación de <span class=\"text-primary\">soluciones interactivas personalizadas</span>.<br class=\"hidden md:block\" />Nuestra trayectoria nos ha permitido dominar herramientas como Unity, Unreal Engine, Blender, y tecnologías web de vanguardia. Gracias a este recorrido, hemos aprendido a combinar <em>creatividad, técnica y visión estratégica</em> para ofrecer proyectos sólidos, inmersivos y funcionales.",
+			"experiences": [
+				{
+					"title": "🎮 Desarrollo de Videojuegos",
+					"items": [
+						"Unity, Unreal Engine, Godot",
+						"Diseño de niveles, mecánicas y jugabilidad",
+						"Sistemas de inteligencia artificial para NPCs",
+						"Programación multiplataforma (PC, Web, Mobile)",
+						"Integración de efectos visuales y físicas realistas"
+					]
+				},
+				{
+					"title": "🛠️ Software a Medida",
+					"items": [
+						"Aplicaciones web con tecnologías modernas (React, Astro, Tailwind)",
+						"Sistemas empresariales con bases de datos SQL y NoSQL",
+						"Interfaces intuitivas y diseño UX/UI profesional",
+						"Integración de APIs externas y soluciones en la nube",
+						"Automatización de procesos y dashboards interactivos"
+					]
+				},
+				{
+					"title": "🎨 Modelado y Animación",
+					"items": [
+						"Modelado 3D de personajes, objetos y escenarios",
+						"Rigging y animación para videojuegos y cortos",
+						"Texturizado PBR y exportación optimizada",
+						"Producción de cinemáticas para trailers y juegos"
+					]
+				},
+				{
+					"title": "🌍 Realidad Virtual y Mundos Inmersivos",
+					"items": [
+						"Diseño de experiencias en VR/AR",
+						"Ambientes 3D interactivos para Oculus, Vive y WebXR",
+						"Escenarios educativos y simulaciones técnicas",
+						"Integración con sensores, inputs físicos y controladores",
+						"Diseño emocional y storytelling espacial"
+					]
+				},
+				{
+					"title": "🤝 Consultoría y Alianzas",
+					"items": [
+						"Asesoramiento en arquitectura de proyectos digitales",
+						"Mentoría a equipos técnicos y creativos",
+						"Workshops de tecnología y diseño para equipos",
+						"Outsourcing de desarrollo y arte para otros estudios",
+						"Colaboraciones estratégicas para proyectos conjuntos"
+					]
+				},
+				{
+					"title": "🧪 I+D y Proyectos Experimentales",
+					"items": [
+						"Exploración con inteligencia artificial generativa",
+						"Prototipado rápido con motores gráficos",
+						"Integración de blockchain en juegos y apps",
+						"Simulaciones interactivas con física avanzada",
+						"Investigación de nuevas interfaces de interacción"
+					]
+				}
+			]
+		},
+		"gallery": {
+			"id": "galería",
+			"title": "🎨 Galería de ideas hechas realidad 🎨",
+			"subtitle": "Cada imagen cuenta una historia: la tuya puede ser la próxima",
+			"images": [
+				{
+					"image": "/colonial/images/modelo1.webp",
+					"title": "Excavadora Robusta",
+					"description": "Modelo 3D de excavadora industrial detallada y optimizada para videojuegos. Diseño robusto y texturas de alta calidad para un realismo visual impactante."
+				},
+				{
+					"image": "/colonial/images/modelo2.webp",
+					"title": "Excavadora Futurista",
+					"description": "Modelo 3D de excavadora con diseño futurista y detalles de alta calidad, ideal para entornos de ciencia ficción o industriales avanzados."
+				},
+				{
+					"image": "/colonial/images/modelo3.webp",
+					"title": "Excavadora con Barrena",
+					"description": "Modelo 3D detallado de una excavadora equipada con barrena industrial. Ideal para proyectos de construcción y simulación de perforación de terrenos."
+				},
+				{
+					"image": "/colonial/images/modelo4.webp",
+					"title": "Excavadora con Pinza",
+					"description": "Modelo 3D de excavadora equipada con pinza de agarre de alta resistencia. Perfecto para simulaciones de reciclaje, demolición o manipulación de materiales pesados."
+				},
+				{
+					"image": "/colonial/images/modelo5.webp",
+					"title": "Excavadora con Sierra Circular",
+					"description": "Modelo 3D de excavadora equipada con una potente sierra circular. Ideal para juegos que requieran tala, desmonte o corte de materiales resistentes."
+				},
+				{
+					"image": "/colonial/images/modelo6.webp",
+					"title": "Cañón Medieval",
+					"description": "Modelo 3D detallado de un cañón medieval de bronce y madera. Ideal para juegos de estrategia, rol o aventuras históricas."
+				},
+				{
+					"image": "/colonial/images/modelo7.webp",
+					"title": "Hacha de Mano",
+					"description": "Modelo 3D detallado de un hacha de mano de madera y metal. Ideal para juegos de supervivencia, simulación o ambientados en épocas pasadas."
+				},
+				{
+					"image": "/colonial/images/modelo8.webp",
+					"title": "Cañón con Balas",
+					"description": "Modelo 3D detallado de un cañón de época con municiones de bola de cañón. Perfecto para juegos de piratas, batallas navales históricas o simulaciones de asedio."
+				}
+			]
+		},
+		"projects": {
+			"id": "proyectos",
+			"title": "🎮 Proyectos Destacados 🎮",
+			"projects": [
+				{
+					"title": "Rizzita Punch",
+					"image": "/colonial/images/rizzita.jpg",
+					"alt": "Proyecto Rizzita Punch",
+					"description": "El Gran combate de Rizzita y sus amigos,para proteger Frutyland y la comida sana de la comida ultra procesada, del malvado Mr. CAO"
+				}
+			],
+			"soon": "Próximamente compartiremos más proyectos"
+		},
+		"faq": {
+			"id": "faq",
+			"title": "🤔 Preguntas Frecuentes 🤔",
+			"faqs": [
+				{
+					"question": "¿Qué tipo de proyectos aceptan?",
+					"answer": "Trabajamos con empresas, emprendedores, y estudios creativos. Aceptamos desde ideas conceptuales hasta proyectos técnicos avanzados. Nos adaptamos a distintas escalas y necesidades."
+				},
+				{
+					"question": "¿Puedo contratarlos para una parte específica de mi proyecto?",
+					"answer": "Sí, podemos trabajar en componentes como programación, arte 3D, animaciones o integración de sistemas. También colaboramos como refuerzo externo para otros estudios."
+				},
+				{
+					"question": "¿Cuál es el proceso de trabajo?",
+					"answer": "Primero analizamos tu idea o necesidad. Luego definimos alcance, presupuesto y tiempos. Usamos metodologías ágiles y compartimos avances constantes. La comunicación es clave para nosotros."
+				},
+				{
+					"question": "¿Ofrecen soporte post-lanzamiento?",
+					"answer": "Sí, ofrecemos planes de mantenimiento, soporte técnico, actualizaciones o mejoras según tu proyecto. Nos interesa que tu producto evolucione correctamente."
+				}
+			]
+		},
+		"contact": {
+			"id": "contacto",
+			"title": "¿Tienes un proyecto? ¡Hablemos!",
+			"description": "Ya sea una idea loca o una misión técnica, en COLONIAL INNOV estamos listos para escucharla. Escríbenos o llámanos directamente.",
+			"form": {
+				"name": {
+					"label": "Nombre completo",
+					"placeholder": "Ingresa tu nombre completo"
+				},
+				"email": {
+					"label": "Correo electrónico",
+					"placeholder": "ejemplo@correo.com"
+				},
+				"message": {
+					"label": "Mensaje",
+					"placeholder": "Escribe tu mensaje aquí"
+				},
+				"submit": {
+					"label": "Enviar mensaje"
+				},
+				"userType": {
+					"label": "Tipo de contacto"
+				},
+				"phone": {
+					"label": "Número de teléfono",
+					"placeholder": "+34 600 112 233"
+				},
+				"companyName": {
+					"label": "Nombre de la empresa",
+					"placeholder": "Ingresa el nombre de tu empresa"
+				},
+				"individual": "Independiente",
+				"company": "Empresa",
+				"validation": {
+					"required": "Por favor, completa los campos obligatorios.",
+					"phoneInvalid": "El número de teléfono no es válido.",
+					"success": "¡Mensaje enviado con éxito!",
+					"error": "Ocurrió un error. Intenta de nuevo.",
+					"sending": "Enviando..."
+				}
+			}
+		},
+		"footer": {
+			"id": "footer",
+			"sectionTitles": {
+				"navigation": "Navegación",
+				"social": "Síguenos",
+				"credits": "Créditos"
+			},
+			"navigation": [
+				{
+					"text": "Servicios",
+					"href": "#servicios"
+				},
+				{
+					"text": "Experiencia",
+					"href": "#experiencia"
+				},
+				{
+					"text": "Preguntas Frecuentes",
+					"href": "#faq"
+				},
+				{
+					"text": "Contacto",
+					"href": "#contacto"
+				}
+			],
+			"socialLinks": [
+				{
+					"icon": "email",
+					"href": "mailto:colonial.innov@gmail.com"
+				},
+				{
+					"icon": "facebook",
+					"href": "https://www.facebook.com/share/18t98HSbQu/"
+				},
+				{
+					"icon": "linkedin",
+					"href": "https://www.linkedin.com/in/colonial-innov-78247733a/"
+				}
+			],
+			"credits": {
+				"text": "Sitio diseñado por el equipo de COLONIAL INNOV 💜",
+				"year": 2019,
+				"tagline": "Impulsando la creatividad con tecnología desde",
+				"copyright": "© 2025 COLONIAL INNOV. Todos los derechos reservados."
+			}
+		},
+		"carousel": [
+			{
+				"title": "Excavadora Robusta",
+				"description": "Modelo 3D de excavadora industrial detallada y optimizada para videojuegos. Diseño robusto y texturas de alta calidad para un realismo visual impactante.",
+				"image": "/colonial/images/modelo1.webp"
+			},
+			{
+				"title": "Excavadora Futurista",
+				"description": "Modelo 3D de excavadora con diseño futurista y detalles de alta calidad, ideal para entornos de ciencia ficción o industriales avanzados.",
+				"image": "/colonial/images/modelo2.webp"
+			},
+			{
+				"title": "Excavadora con Barrena",
+				"description": "Modelo 3D detallado de una excavadora equipada con barrena industrial. Ideal para proyectos de construcción y simulación de perforación de terrenos.",
+				"image": "/colonial/images/modelo3.webp"
+			},
+			{
+				"title": "Excavadora con Pinza",
+				"description": "Modelo 3D de excavadora equipada con pinza de agarre de alta resistencia. Perfecta para simulaciones de reciclaje, demolición o manipulación de materiales pesados.",
+				"image": "/colonial/images/modelo4.webp"
+			},
+			{
+				"title": "Excavadora con Sierra Circular",
+				"description": "Modelo 3D de excavadora equipada con una potente sierra circular. Ideal para juegos que requieran tala, desmonte o corte de materiales resistentes.",
+				"image": "/colonial/images/modelo5.webp"
+			},
+			{
+				"title": "Cañón Medieval",
+				"description": "Modelo 3D detallado de un cañón medieval de bronce y madera. Ideal para juegos de estrategia, rol o aventuras históricas.",
+				"image": "/colonial/images/modelo6.webp"
+			},
+			{
+				"title": "Hacha de Mano",
+				"description": "Modelo 3D detallado de un hacha de mano de madera y metal. Ideal para juegos de supervivencia, simulación o ambientados en épocas pasadas.",
+				"image": "/colonial/images/modelo7.webp"
+			},
+			{
+				"title": "Cañón con Balas",
+				"description": "Modelo 3D detallado de un cañón de época con municiones de bola de cañón. Perfecto para juegos de piratas, batallas navales históricas o simulaciones de asedio.",
+				"image": "/colonial/images/modelo8.webp"
+			}
+		]
+	}
+}

@@ -1,0 +1,28 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Contact from "@sections/Contact.astro";
+import Experiences from "@sections/Experiences.astro";
+import Faq from "@sections/Faq.astro";
+import Gallery from "@sections/Gallery.astro";
+import Hero from "@sections/Hero.astro";
+import Projects from "@sections/Projects.astro";
+import Services from "@sections/Services.astro";
+
+import { getI18n } from "@i18n/index";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+
+const { contact, faq, gallery, hero, projects, services, experiences } =
+	i18n.sections;
+---
+
+<Layout {i18n}>
+    <Hero i18n={hero} />
+    <Gallery i18n={gallery} />
+    <Services i18n={services} />
+    <Experiences i18n={experiences} />
+    <Projects i18n={projects} />
+    <Faq i18n={faq} />
+    <Contact i18n={contact} />
+</Layout>

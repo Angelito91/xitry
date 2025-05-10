@@ -1,0 +1,289 @@
+{
+	"title": "COLONIAL INNOV – Creativity and Technology in Video Games",
+	"description": "At COLONIAL INNOV, we bring your ideas to digital life: video games, custom software, virtual worlds, animations, and more.",
+	"keywords": "video games, development, 3D animation, modeling, virtual worlds, digital creativity, custom software",
+	"author": "COLONIAL INNOV",
+	"sections": {
+		"header": {
+			"navLinks": [
+				"home",
+				"gallery",
+				"services",
+				"experiences",
+				"projects",
+				"faq",
+				"contact"
+			]
+		},
+		"hero": {
+			"id": "home",
+			"title": "✨ Where Creativity Comes to Digital Life ✨",
+			"description": "At <span class=\"text-primary font-medium\">COLONIAL INNOV</span>, we are more than just a video game development studio: we are creators of interactive experiences, virtual worlds, and tailored technological solutions.",
+			"button": "► Make Your Ideas a Reality"
+		},
+		"services": {
+			"id": "services",
+			"title": "How Do We Transform Your Ideas?",
+			"description": "We offer specialized services in technology, creativity, and digital innovation.",
+			"more": "Whether you are a company looking for a digital solution, a studio needing creative or technical support, or a dreamer with a great idea, <span class=\"text-primary font-semibold\">COLONIAL INNOV</span> is your ideal partner.",
+			"services": [
+				{
+					"title": "🎮 Video Game Development",
+					"description": "We design interactive experiences for PC, mobile, console, and virtual reality."
+				},
+				{
+					"title": "🖥️ Custom Software",
+					"description": "Tailored solutions for your technological and creative needs."
+				},
+				{
+					"title": "🎨 3D Animations",
+					"description": "Motion graphics, cinematics, and animated art for video games and more."
+				},
+				{
+					"title": "🧱 3D Modeling",
+					"description": "Creation of characters, objects, and scenarios with a professional level."
+				},
+				{
+					"title": "🌍 Virtual Worlds",
+					"description": "Design of immersive environments for engaging experiences."
+				}
+			]
+		},
+		"experiences": {
+			"id": "experiences",
+			"title": "🏆 Our Experience 🏆",
+			"description": "With more than <span class=\"text-primary font-semibold\">5 years of experience</span> in the creative and technological industry, at <strong>COLONIAL INNOV</strong> we have cultivated a multidisciplinary approach that ranges from <span class=\"text-secondary\">video game development</span> to the creation of <span class=\"text-primary\">custom interactive solutions</span>.<br class=\"hidden md:block\" />Our trajectory has allowed us to master tools such as Unity, Unreal Engine, Blender, and cutting-edge web technologies. Thanks to this journey, we have learned to combine <em>creativity, technique, and strategic vision</em> to offer solid, immersive, and functional projects.",
+			"experiences": [
+				{
+					"title": "🎮 Video Game Development",
+					"items": [
+						"Unity, Unreal Engine, Godot",
+						"Level, mechanics, and gameplay design",
+						"Artificial intelligence systems for NPCs",
+						"Multiplatform programming (PC, Web, Mobile)",
+						"Integration of visual effects and realistic physics"
+					]
+				},
+				{
+					"title": "🛠️ Custom Software",
+					"items": [
+						"Web applications with modern technologies (React, Astro, Tailwind)",
+						"Enterprise systems with SQL and NoSQL databases",
+						"Intuitive interfaces and professional UX/UI design",
+						"Integration of external APIs and cloud solutions",
+						"Process automation and interactive dashboards"
+					]
+				},
+				{
+					"title": "🎨 Modeling and Animation",
+					"items": [
+						"3D modeling of characters, objects, and scenarios",
+						"Rigging and animation for video games and shorts",
+						"PBR texturing and optimized export",
+						"Production of cinematics for trailers and games"
+					]
+				},
+				{
+					"title": "🌍 Virtual Reality and Immersive Worlds",
+					"items": [
+						"Design of VR/AR experiences",
+						"Interactive 3D environments for Oculus, Vive, and WebXR",
+						"Educational scenarios and technical simulations",
+						"Integration with sensors, physical inputs, and controllers",
+						"Emotional design and spatial storytelling"
+					]
+				},
+				{
+					"title": "🤝 Consulting and Partnerships",
+					"items": [
+						"Consulting in digital project architecture",
+						"Mentoring for technical and creative teams",
+						"Technology and design workshops for teams",
+						"Development and art outsourcing for other studios",
+						"Strategic collaborations for joint projects"
+					]
+				},
+				{
+					"title": "🧪 R&D and Experimental Projects",
+					"items": [
+						"Exploration with generative artificial intelligence",
+						"Rapid prototyping with graphic engines",
+						"Blockchain integration in games and apps",
+						"Interactive simulations with advanced physics",
+						"Research into new interaction interfaces"
+					]
+				}
+			]
+		},
+		"gallery": {
+			"id": "gallery",
+			"title": "🎨 Gallery of Ideas Made Real 🎨",
+			"subtitle": "Each image tells a story: yours could be the next",
+			"images": [
+				{
+					"image": "/colonial/images/modelo1.webp",
+					"title": "Robust Excavator",
+					"description": "Detailed and optimized 3D model of an industrial excavator for video games. Robust design and high-quality textures for impactful visual realism."
+				},
+				{
+					"image": "/colonial/images/modelo2.webp",
+					"title": "Futuristic Excavator",
+					"description": "3D model of an excavator with a futuristic design and high-quality details, ideal for science fiction or advanced industrial environments."
+				},
+				{
+					"image": "/colonial/images/modelo3.webp",
+					"title": "Excavator with Auger",
+					"description": "Detailed 3D model of an excavator equipped with an industrial auger. Ideal for construction projects and terrain drilling simulations."
+				},
+				{
+					"image": "/colonial/images/modelo4.webp",
+					"title": "Excavator with Grapple",
+					"description": "3D model of an excavator equipped with a high-resistance grapple. Perfect for recycling, demolition, or heavy material handling simulations."
+				},
+				{
+					"image": "/colonial/images/modelo5.webp",
+					"title": "Excavator with Circular Saw",
+					"description": "3D model of an excavator equipped with a powerful circular saw. Ideal for games requiring logging, clearing, or cutting resistant materials."
+				},
+				{
+					"image": "/colonial/images/modelo6.webp",
+					"title": "Medieval Cannon",
+					"description": "Detailed 3D model of a medieval bronze and wood cannon. Ideal for strategy, role-playing, or historical adventure games."
+				},
+				{
+					"image": "/colonial/images/modelo7.webp",
+					"title": "Hand Axe",
+					"description": "Detailed 3D model of a wood and metal hand axe. Ideal for survival, simulation, or games set in past eras."
+				},
+				{
+					"image": "/colonial/images/modelo8.webp",
+					"title": "Cannon with Cannonballs",
+					"description": "Detailed 3D model of a period cannon with cannonball ammunition. Perfect for pirate games, historical naval battles, or siege simulations."
+				}
+			]
+		},
+		"projects": {
+			"id": "projects",
+			"title": "🎮 Featured Projects 🎮",
+			"projects": [
+				{
+					"title": "Rizzita Punch",
+					"image": "/colonial/images/rizzita.jpg",
+					"alt": "Rizzita Punch Project",
+					"description": "The Great battle of Rizzita and her friends, to protect Frutyland and healthy food from ultra-processed food, from the evil Mr. CAO"
+				}
+			],
+			"soon": "More projects coming soon"
+		},
+		"faq": {
+			"id": "faq",
+			"title": "🤔 Frequently Asked Questions 🤔",
+			"faqs": [
+				{
+					"question": "What type of projects do you accept?",
+					"answer": "We work with companies, entrepreneurs, and creative studios. We accept everything from conceptual ideas to advanced technical projects. We adapt to different scales and needs."
+				},
+				{
+					"question": "Can I hire you for a specific part of my project?",
+					"answer": "Yes, we can work on components such as programming, 3D art, animations, or systems integration. We also collaborate as external reinforcement for other studios."
+				},
+				{
+					"question": "What is the work process?",
+					"answer": "First, we analyze your idea or need. Then we define scope, budget, and timelines. We use agile methodologies and share constant progress. Communication is key for us."
+				},
+				{
+					"question": "Do you offer post-launch support?",
+					"answer": "Yes, we offer maintenance plans, technical support, updates, or improvements according to your project. We are interested in your product evolving correctly."
+				}
+			]
+		},
+		"contact": {
+			"id": "contact",
+			"title": "Got a Project? Let's Talk!",
+			"description": "Whether it's a crazy idea or a technical mission, at COLONIAL INNOV we are ready to listen. Write to us or call us directly.",
+			"form": {
+				"name": {
+					"label": "Full name",
+					"placeholder": "Enter your full name"
+				},
+				"email": {
+					"label": "Email address",
+					"placeholder": "example@email.com"
+				},
+				"message": {
+					"label": "Message",
+					"placeholder": "Write your message here"
+				},
+				"submit": {
+					"label": "Send message"
+				},
+				"userType": {
+					"label": "Contact type"
+				},
+				"phone": {
+					"label": "Phone number",
+					"placeholder": "+34 600 112 233"
+				},
+				"companyName": {
+					"label": "Company name",
+					"placeholder": "Enter your company name"
+				},
+				"individual": "Individual",
+				"company": "Company",
+				"validation": {
+					"required": "Please complete the required fields.",
+					"phoneInvalid": "The phone number is not valid.",
+					"success": "Message sent successfully!",
+					"error": "An error occurred. Please try again.",
+					"sending": "Sending..."
+				}
+			}
+		},
+		"footer": {
+			"id": "footer",
+			"sectionTitles": {
+				"navigation": "Navigation",
+				"social": "Follow us",
+				"credits": "Credits"
+			},
+			"navigation": [
+				{
+					"text": "Services",
+					"href": "#services"
+				},
+				{
+					"text": "Experience",
+					"href": "#experience"
+				},
+				{
+					"text": "Frequently Asked Questions",
+					"href": "#faq"
+				},
+				{
+					"text": "Contact",
+					"href": "#contact"
+				}
+			],
+			"socialLinks": [
+				{
+					"icon": "email",
+					"href": "mailto:colonial.innov@gmail.com"
+				},
+				{
+					"icon": "facebook",
+					"href": "https://www.facebook.com/share/18t98HSbQu/"
+				},
+				{
+					"icon": "linkedin",
+					"href": "https://www.linkedin.com/in/colonial-innov-78247733a/"
+				}
+			],
+			"credits": {
+				"text": "Site designed by the COLONIAL INNOV team 💜",
+				"year": 2019,
+				"tagline": "Boosting creativity with technology since",
+				"copyright": "© 2025 COLONIAL INNOV. All rights reserved."
+			}
+		}
+	}
+}

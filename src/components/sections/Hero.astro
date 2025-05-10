@@ -1,0 +1,46 @@
+---
+import SectionContainer from "@components/ui/SectionContainer.astro";
+import type { HeroSection } from "src/types";
+
+interface Props {
+	i18n: HeroSection;
+}
+
+const { i18n } = Astro.props;
+const { title, description, button, id } = i18n;
+---
+
+<SectionContainer id={id} class="px-4 sm:px-6 lg:px-8">
+    <div class="relative mx-auto text-center">
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <img
+                alt="Logo de la compañía"
+                src="/colonial/images/logo.webp"
+                width="250"
+                height="250"
+                loading="lazy"
+                class="mx-auto mb-4 object-contain drop-shadow-[0_0_12px_#ff66cc] aspect-square"
+            />
+        </div>
+
+        <h1
+            class="text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl md:text-5xl text-pretty text-secondary"
+        >
+            {title}
+        </h1>
+
+        <p
+            set:html={description}
+            class="max-w-2xl mx-auto mt-4 text-base font-light tracking-wide text-gray-300 sm:mt-6 sm:text-lg md:text-xl text-pretty"
+        />
+
+        <div class="flex flex-wrap justify-center gap-3 mt-6 sm:mt-10 sm:gap-4">
+            <a
+                href={`#${id}`}
+                class="px-5 py-2 font-bold transition-transform border rounded-md sm:px-6 sm:py-2 border-secondary text-secondary hover:bg-secondary/20 hover:scale-105 hover:rotate-1"
+            >
+                {button}
+            </a>
+        </div>
+    </div>
+</SectionContainer>

@@ -1,0 +1,72 @@
+---
+import Footer from "@components/sections/Footer.astro";
+import Header from "@components/sections/Header.astro";
+import Lights from "@components/ui/Lights.astro";
+
+import "../styles/global.css";
+
+import type { i18nWebsite } from "src/types";
+
+interface Props {
+	i18n: i18nWebsite;
+}
+
+const { url } = Astro;
+const { i18n } = Astro.props;
+const { title, description, keywords, author, sections } = i18n;
+const { header, footer } = sections;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/colonial/favicon.ico" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
+		<meta name="author" content={author} />
+
+		<link rel="alternate" href={url.href} hreflang="es" />
+		<link rel="alternate" href={`${url.href}/en/`} hreflang="en" />
+		<link rel="alternate" href={`${url.href}/fr/`} hreflang="fr" />
+
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="/colonial/images/logo.webp" />
+		<meta property="og:url" content={url.href} />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+			media="print"
+			onload="this.media='all'"
+		/>
+		<noscript>
+			<link
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+			/>
+		</noscript>
+	</head>
+	<body
+		class="bg-gradient-to-br from-background via-background-alt to-primary/80"
+	>
+		<Header i18n={header} />
+		<Lights />
+		<slot />
+		<Footer i18n={footer} />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		font-family: "Chakra Petch", sans-serif;
+	}
+</style>

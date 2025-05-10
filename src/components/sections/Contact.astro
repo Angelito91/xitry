@@ -1,0 +1,47 @@
+---
+import Button from "@components/ui/Button.astro";
+import FormContact from "@components/ui/FormContact.astro";
+import SectionContainer from "@components/ui/SectionContainer.astro";
+
+import Email from "@components/icons/Email.astro";
+import Linkedin from "@components/icons/Linkedin.astro";
+
+import type { ContactSection } from "src/types";
+
+interface Props {
+    i18n: ContactSection;
+}
+
+const { i18n } = Astro.props;
+const { title, description, form, id } = i18n;
+---
+
+<SectionContainer id={id} class="px-4 bg-background sm:px-6 lg:px-8">
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+        <h2 class="mb-6 text-3xl font-bold sm:text-4xl text-secondary">
+            {title}
+        </h2>
+        <p class="max-w-2xl mx-auto mb-10 text-base text-gray-400 sm:text-lg">
+            {description}
+        </p>
+
+        <FormContact i18n={form} />
+
+        <div
+            class="flex flex-col flex-wrap items-center justify-center gap-4 mt-10 text-white sm:mt-12 sm:flex-row sm:gap-6"
+        >
+            <Button
+                href="https://www.linkedin.com/in/colonial-innov-78247733a/"
+                target="_blank"
+                text="colonial-innov"
+                Icon={Linkedin}
+            />
+            <Button
+                href="mailto:colonial.innov@gmail.com"
+                target="_blank"
+                text="colonial.innov@gmail.com"
+                Icon={Email}
+            />
+        </div>
+    </div>
+</SectionContainer>

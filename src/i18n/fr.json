@@ -1,0 +1,289 @@
+{
+	"title": "COLONIAL INNOV – Créativité et Technologie dans les Jeux Vidéo",
+	"description": "Chez COLONIAL INNOV, nous donnons vie numérique à vos idées : jeux vidéo, logiciels sur mesure, mondes virtuels, animations et bien plus encore.",
+	"keywords": "jeux vidéo, développement, animation 3D, modélisation, mondes virtuels, créativité numérique, logiciel personnalisé",
+	"author": "COLONIAL INNOV",
+	"sections": {
+		"header": {
+			"navLinks": [
+				"accueil",
+				"galerie",
+				"services",
+				"expériences",
+				"projets",
+				"faq",
+				"contact"
+			]
+		},
+		"hero": {
+			"id": "accueil",
+			"title": "✨ Là où la créativité prend vie numérique ✨",
+			"description": "Chez <span class=\"text-primary font-medium\">COLONIAL INNOV</span>, nous sommes plus qu'un studio de développement de jeux vidéo : nous sommes des créateurs d'expériences interactives, de mondes virtuels et de solutions technologiques sur mesure.",
+			"button": "► Donnez vie à vos idées"
+		},
+		"services": {
+			"id": "services",
+			"title": "Comment transformons-nous vos idées ?",
+			"description": "Nous offrons des services spécialisés en technologie, créativité et innovation numérique.",
+			"more": "Que vous soyez une entreprise à la recherche d'une solution numérique, un studio ayant besoin d'un soutien créatif ou technique, ou un rêveur avec une grande idée, <span class=\"text-primary font-semibold\">COLONIAL INNOV</span> est votre partenaire idéal.",
+			"services": [
+				{
+					"title": "🎮 Développement de jeux vidéo",
+					"description": "Nous concevons des expériences interactives pour PC, mobiles, consoles et réalité virtuelle."
+				},
+				{
+					"title": "🖥️ Logiciels personnalisés",
+					"description": "Solutions sur mesure pour vos besoins technologiques et créatifs."
+				},
+				{
+					"title": "🎨 Animations 3D",
+					"description": "Motion graphics, cinématiques et art animé pour les jeux vidéo et plus encore."
+				},
+				{
+					"title": "🧱 Modélisation 3D",
+					"description": "Création de personnages, d'objets et de scénarios de niveau professionnel."
+				},
+				{
+					"title": "🌍 Mondes virtuels",
+					"description": "Conception d'environnements immersifs pour des expériences engageantes."
+				}
+			]
+		},
+		"experiences": {
+			"id": "expériences",
+			"title": "🏆 Notre expérience 🏆",
+			"description": "Avec plus de <span class=\"text-primary font-semibold\">5 ans d'expérience</span> dans l'industrie créative et technologique, chez <strong>COLONIAL INNOV</strong>, nous avons cultivé une approche multidisciplinaire qui s'étend du <span class=\"text-secondary\">développement de jeux vidéo</span> à la création de <span class=\"text-primary\">solutions interactives personnalisées</span>.<br class=\"hidden md:block\" />Notre parcours nous a permis de maîtriser des outils tels que Unity, Unreal Engine, Blender et des technologies web de pointe. Grâce à ce parcours, nous avons appris à combiner <em>créativité, technique et vision stratégique</em> pour proposer des projets solides, immersifs et fonctionnels.",
+			"experiences": [
+				{
+					"title": "🎮 Développement de jeux vidéo",
+					"items": [
+						"Unity, Unreal Engine, Godot",
+						"Conception de niveaux, de mécanismes et de jouabilité",
+						"Systèmes d'intelligence artificielle pour les PNJ",
+						"Programmation multiplateforme (PC, Web, Mobile)",
+						"Intégration d'effets visuels et de physique réaliste"
+					]
+				},
+				{
+					"title": "🛠️ Logiciels sur mesure",
+					"items": [
+						"Applications web avec des technologies modernes (React, Astro, Tailwind)",
+						"Systèmes d'entreprise avec des bases de données SQL et NoSQL",
+						"Interfaces intuitives et conception UX/UI professionnelle",
+						"Intégration d'API externes et de solutions cloud",
+						"Automatisation des processus et tableaux de bord interactifs"
+					]
+				},
+				{
+					"title": "🎨 Modélisation et animation",
+					"items": [
+						"Modélisation 3D de personnages, d'objets et de scénarios",
+						"Rigging et animation pour les jeux vidéo et les courts métrages",
+						"Texturisation PBR et exportation optimisée",
+						"Production de cinématiques pour les bandes-annonces et les jeux"
+					]
+				},
+				{
+					"title": "🌍 Réalité virtuelle et mondes immersifs",
+					"items": [
+						"Conception d'expériences en VR/AR",
+						"Environnements 3D interactifs pour Oculus, Vive et WebXR",
+						"Scénarios éducatifs et simulations techniques",
+						"Intégration avec des capteurs, des entrées physiques et des contrôleurs",
+						"Conception émotionnelle et narration spatiale"
+					]
+				},
+				{
+					"title": "🤝 Conseil et partenariats",
+					"items": [
+						"Conseil en architecture de projets numériques",
+						"Mentorat pour les équipes techniques et créatives",
+						"Ateliers de technologie et de conception pour les équipes",
+						"Externalisation du développement et de l'art pour d'autres studios",
+						"Collaborations stratégiques pour des projets communs"
+					]
+				},
+				{
+					"title": "🧪 R&D et projets expérimentaux",
+					"items": [
+						"Exploration avec l'intelligence artificielle générative",
+						"Prototypage rapide avec des moteurs graphiques",
+						"Intégration de la blockchain dans les jeux et les applications",
+						"Simulations interactives avec une physique avancée",
+						"Recherche de nouvelles interfaces d'interaction"
+					]
+				}
+			]
+		},
+		"gallery": {
+			"id": "galerie",
+			"title": "🎨 Galerie d'idées devenues réalité 🎨",
+			"subtitle": "Chaque image raconte une histoire : la vôtre pourrait être la prochaine",
+			"images": [
+				{
+					"image": "/colonial/images/modelo1.webp",
+					"title": "Excavatrice robuste",
+					"description": "Modèle 3D d'une excavatrice industrielle détaillée et optimisée pour les jeux vidéo. Conception robuste et textures de haute qualité pour un réalisme visuel saisissant."
+				},
+				{
+					"image": "/colonial/images/modelo2.webp",
+					"title": "Excavatrice futuriste",
+					"description": "Modèle 3D d'une excavatrice au design futuriste et aux détails de haute qualité, idéal pour les environnements de science-fiction ou industriels avancés."
+				},
+				{
+					"image": "/colonial/images/modelo3.webp",
+					"title": "Excavatrice avec tarière",
+					"description": "Modèle 3D détaillé d'une excavatrice équipée d'une tarière industrielle. Idéal pour les projets de construction et les simulations de forage de terrain."
+				},
+				{
+					"image": "/colonial/images/modelo4.webp",
+					"title": "Excavatrice avec pince",
+					"description": "Modèle 3D d'une excavatrice équipée d'une pince de préhension haute résistance. Parfait pour les simulations de recyclage, de démolition ou de manipulation de matériaux lourds."
+				},
+				{
+					"image": "/colonial/images/modelo5.webp",
+					"title": "Excavatrice avec scie circulaire",
+					"description": "Modèle 3D d'une excavatrice équipée d'une puissante scie circulaire. Idéal pour les jeux nécessitant l'abattage, le défrichage ou la coupe de matériaux résistants."
+				},
+				{
+					"image": "/colonial/images/modelo6.webp",
+					"title": "Canon médiéval",
+					"description": "Modèle 3D détaillé d'un canon médiéval en bronze et en bois. Idéal pour les jeux de stratégie, de rôle ou d'aventures historiques."
+				},
+				{
+					"image": "/colonial/images/modelo7.webp",
+					"title": "Hache à main",
+					"description": "Modèle 3D détaillé d'une hache à main en bois et en métal. Idéal pour les jeux de survie, de simulation ou se déroulant à des époques passées."
+				},
+				{
+					"image": "/colonial/images/modelo8.webp",
+					"title": "Canon avec boulets de canon",
+					"description": "Modèle 3D détaillé d'un canon d'époque avec des munitions de boulets de canon. Parfait pour les jeux de pirates, les batailles navales historiques ou les simulations de siège."
+				}
+			]
+		},
+		"projects": {
+			"id": "projets",
+			"title": "🎮 Projets phares 🎮",
+			"projects": [
+				{
+					"title": "Rizzita Punch",
+					"image": "/colonial/images/rizzita.jpg",
+					"alt": "Projet Rizzita Punch",
+					"description": "Le grand combat de Rizzita et ses amis, pour protéger Frutyland et la nourriture saine de la malbouffe, du méchant M. CAO"
+				}
+			],
+			"soon": "Plus de projets seront bientôt partagés"
+		},
+		"faq": {
+			"id": "faq",
+			"title": "🤔 Foire Aux Questions 🤔",
+			"faqs": [
+				{
+					"question": "Quel type de projets acceptez-vous ?",
+					"answer": "Nous travaillons avec des entreprises, des entrepreneurs et des studios créatifs. Nous acceptons des idées conceptuelles aux projets techniques avancés. Nous nous adaptons à différentes échelles et besoins."
+				},
+				{
+					"question": "Puis-je vous engager pour une partie spécifique de mon projet ?",
+					"answer": "Oui, nous pouvons travailler sur des composants tels que la programmation, l'art 3D, les animations ou l'intégration de systèmes. Nous collaborons également en tant que renfort externe pour d'autres studios."
+				},
+				{
+					"question": "Quel est le processus de travail ?",
+					"answer": "Nous analysons d'abord votre idée ou votre besoin. Ensuite, nous définissons la portée, le budget et les délais. Nous utilisons des méthodologies agiles et partageons des avancées constantes. La communication est essentielle pour nous."
+				},
+				{
+					"question": "Offrez-vous un support post-lancement ?",
+					"answer": "Oui, nous proposons des plans de maintenance, un support technique, des mises à jour ou des améliorations en fonction de votre projet. Nous souhaitons que votre produit évolue correctement."
+				}
+			]
+		},
+		"contact": {
+			"id": "contact",
+			"title": "Vous avez un projet ? Parlons-en !",
+			"description": "Qu'il s'agisse d'une idée folle ou d'une mission technique, chez COLONIAL INNOV, nous sommes prêts à l'écouter. Écrivez-nous ou appelez-nous directement.",
+			"form": {
+				"name": {
+					"label": "Nom complet",
+					"placeholder": "Entrez votre nom complet"
+				},
+				"email": {
+					"label": "Adresse e-mail",
+					"placeholder": "exemple@email.com"
+				},
+				"message": {
+					"label": "Message",
+					"placeholder": "Écrivez votre message ici"
+				},
+				"submit": {
+					"label": "Envoyer le message"
+				},
+				"userType": {
+					"label": "Type de contact"
+				},
+				"phone": {
+					"label": "Numéro de téléphone",
+					"placeholder": "+34 600 112 233"
+				},
+				"companyName": {
+					"label": "Nom de l'entreprise",
+					"placeholder": "Entrez le nom de votre entreprise"
+				},
+				"individual": "Particulier",
+				"company": "Entreprise",
+				"validation": {
+					"required": "Veuillez remplir les champs obligatoires.",
+					"phoneInvalid": "Le numéro de téléphone n'est pas valide.",
+					"success": "Message envoyé avec succès !",
+					"error": "Une erreur s'est produite. Veuillez réessayer.",
+					"sending": "Envoi..."
+				}
+			}
+		},
+		"footer": {
+			"id": "footer",
+			"sectionTitles": {
+				"navigation": "Navigation",
+				"social": "Suivez-nous",
+				"credits": "Crédits"
+			},
+			"navigation": [
+				{
+					"text": "Services",
+					"href": "#services"
+				},
+				{
+					"text": "Expérience",
+					"href": "#expérience"
+				},
+				{
+					"text": "Foire Aux Questions",
+					"href": "#faq"
+				},
+				{
+					"text": "Contact",
+					"href": "#contact"
+				}
+			],
+			"socialLinks": [
+				{
+					"icon": "email",
+					"href": "mailto:colonial.innov@gmail.com"
+				},
+				{
+					"icon": "facebook",
+					"href": "https://www.facebook.com/share/18t98HSbQu/"
+				},
+				{
+					"icon": "linkedin",
+					"href": "https://www.linkedin.com/in/colonial-innov-78247733a/"
+				}
+			],
+			"credits": {
+				"text": "Site conçu par l'équipe de COLONIAL INNOV 💜",
+				"year": 2019,
+				"tagline": "Booster la créativité avec la technologie depuis",
+				"copyright": "© 2025 COLONIAL INNOV. Tous droits réservés."
+			}
+		}
+	}
+}

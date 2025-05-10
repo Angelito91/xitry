@@ -1,0 +1,83 @@
+---
+import SectionContainer from "@components/ui/SectionContainer.astro";
+import type { FAQSection } from "src/types";
+
+interface Props {
+	i18n: FAQSection;
+}
+
+const { i18n } = Astro.props;
+const { id, title, faqs } = i18n;
+---
+
+<SectionContainer id={id} class="px-4 bg-background-alt sm:px-6 lg:px-8">
+    <div class="relative z-10 max-w-4xl mx-auto">
+        <h2
+            class="mb-8 text-2xl font-bold text-center sm:text-3xl md:text-4xl text-primary sm:mb-12"
+        >
+            {title}
+        </h2>
+
+        <div class="space-y-4">
+            {
+                faqs.map((faq, index) => (
+                    <div class="overflow-hidden transition-all border group bg-white/5 border-white/10 rounded-xl backdrop-blur-md">
+                        <button
+                            type="button"
+                            class={`w-full cursor-pointer list-none px-4 sm:px-6 py-4 flex justify-between items-center text-base sm:text-lg font-semibold text-left ${
+                                index % 2 === 0
+                                    ? "text-primary"
+                                    : "text-secondary"
+                            }`}
+                            onclick={`toggleFaq(${index})`}
+                        >
+                            <span class="flex-1">{faq.question}</span>
+                            <span
+                                id={`icon-${index}`}
+                                class="ml-4 transition-transform duration-300 shrink-0"
+                            >
+                                <svg
+                                    class="w-5 h-5 text-gray-400"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M19 9l-7 7-7-7"
+                                    />
+                                </svg>
+                            </span>
+                        </button>
+                        <div
+                            id={`answer-${index}`}
+                            class="px-4 overflow-hidden text-sm text-gray-300 transition-all duration-500 ease-in-out max-h-0 sm:px-6 sm:text-base"
+                        >
+                            <div class="pb-4 sm:pb-6">{faq.answer}</div>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</SectionContainer>
+
+<script is:inline>
+    function toggleFaq(index) {
+        const content = document.getElementById(`answer-${index}`);
+        const icon = document.getElementById(`icon-${index}`);
+
+        const isOpen =
+            content.style.maxHeight && content.style.maxHeight !== "0px";
+
+        if (isOpen) {
+            content.style.maxHeight = "0px";
+            icon.classList.remove("rotate-180");
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.classList.add("rotate-180");
+        }
+    }
+</script>

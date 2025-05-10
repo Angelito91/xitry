@@ -1,0 +1,31 @@
+---
+const { currentLocale, url } = Astro;
+
+const locales = [
+	{ code: "es", label: "🇪🇸 ES" },
+	{ code: "en", label: "🇬🇧 EN" },
+	{ code: "fr", label: "🇫🇷 FR" },
+];
+---
+
+
+<select
+    name="locale"
+    id="locale"
+    aria-label="Select language"
+    onchange={`location.href='/colonial/' + this.value + '/'`}
+    class="px-2 py-1 text-sm font-semibold tracking-wide text-white transition duration-200 bg-transparent border rounded-lg border-white/30 hover:border-white focus:outline-none focus:ring-1 focus:ring-primary"
+>
+    <label for="locale" class="sr-only">Select language</label>
+    {
+        locales.map((locale) => (
+            <option
+                value={locale.code}
+                selected={locale.code === currentLocale}
+                class="text-black"
+            >
+                {locale.label}
+            </option>
+        ))
+    }
+</select>

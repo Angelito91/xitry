@@ -1,0 +1,53 @@
+---
+import SectionContainer from "@components/ui/SectionContainer.astro";
+import type { ProjectsSection } from "src/types";
+
+interface Props {
+	i18n: ProjectsSection;
+}
+
+const { i18n } = Astro.props;
+const { id, title, projects, soon } = i18n;
+---
+
+<SectionContainer id={id} class="px-4 bg-background sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto text-center">
+        <h2
+            class="mb-8 text-2xl font-bold sm:text-3xl md:text-4xl sm:mb-12 text-primary"
+        >
+            {title}
+        </h2>
+
+        <div
+            class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 sm:gap-8"
+        >
+            {
+                projects.map((project) => (
+                    <div class="bg-accent/60 border border-white/10 rounded-xl overflow-hidden shadow-lg backdrop-blur-md hover:scale-[1.02] transition-transform">
+                        <img
+                            src={project.image}
+                            alt={project.alt}
+                            loading="lazy"
+                            class="object-cover w-full h-60 sm:h-48"
+                        />
+                        <div class="p-4 sm:p-5">
+                            <h3 class="mb-1 text-lg font-bold sm:text-xl text-secondary sm:mb-2">
+                                {project.title}
+                            </h3>
+                            <p class="text-sm text-gray-300 sm:text-base">
+                                {project.description}
+                            </p>
+                        </div>
+                    </div>
+                ))
+            }
+            {
+                projects.length < 2 && (
+                    <div class="flex items-center justify-center text-3xl text-white border bg-accent/60 border-white/10 rounded-xl animate-pulse">
+                        {soon}
+                    </div>
+                )
+            }
+        </div>
+    </div>
+</SectionContainer>

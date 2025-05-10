@@ -1,0 +1,57 @@
+---
+import SectionContainer from "@components/ui/SectionContainer.astro";
+import type { ServicesSection } from "src/types";
+
+interface Props {
+	i18n: ServicesSection;
+}
+
+const { i18n } = Astro.props;
+const { id, title, description, more, services } = i18n;
+---
+
+<SectionContainer id={id} class="px-4 bg-background sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto text-center">
+        <h2
+            class="mb-4 text-2xl font-extrabold tracking-wide sm:text-3xl md:text-4xl text-secondary sm:mb-6 drop-shadow"
+        >
+            <span class="text-yellow-500">✦</span>
+            {title}
+            <span class="text-yellow-500">✦</span>
+        </h2>
+
+        <p
+            class="max-w-3xl mx-auto mb-5 text-base text-gray-300 sm:text-lg sm:mb-9 backdrop-blur-sm"
+        >
+            {description}
+        </p>
+
+        <div
+            class="grid grid-cols-1 gap-6 text-left sm:grid-cols-2 lg:grid-cols-3 sm:gap-8"
+        >
+            {
+                services.map((service, index) => (
+                    <div
+                        class={`${
+                            index % 2 === 0
+                                ? "hover:shadow-primary/40"
+                                : "hover:shadow-secondary"
+                        } bg-white/5 backdrop-blur-md p-4 sm:p-6 rounded-xl border border-white/10 shadow-md transition`}
+                    >
+                        <h3 class="mb-1 text-lg font-semibold sm:text-xl sm:mb-2 text-secondary">
+                            {service.title}
+                        </h3>
+                        <p class="text-sm text-gray-200 sm:text-base">
+                            {service.description}
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+
+        <div
+            set:html={more}
+            class="max-w-3xl mx-auto mt-6 text-base font-light leading-relaxed text-gray-300 sm:text-lg"
+        />
+    </div>
+</SectionContainer>
