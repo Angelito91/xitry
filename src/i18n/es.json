@@ -17,7 +17,7 @@
 		},
 		"hero": {
 			"id": "inicio",
-			"title": "✨ Donde la creatividad cobra vida digital ✨",
+			"title": "Donde la creatividad cobra vida digital",
 			"description": "En <span class=\"text-primary font-medium\">Xitry Games</span>, somos más que un estudio de desarrollo de videojuegos: somos creadores de experiencias interactivas, mundos virtuales y soluciones tecnológicas a medida.",
 			"button": "► Haz que tus ideas se hagan realidad"
 		},
@@ -51,7 +51,7 @@
 		},
 		"experiences": {
 			"id": "experiencias",
-			"title": "🏆 Nuestra Experiencia 🏆",
+			"title": "Nuestra Experiencia",
 			"description": "Con más de <span class=\"text-primary font-semibold\">5 años de experiencia</span> en la industria creativa y tecnológica, en <strong>Xitry Games</strong> hemos cultivado un enfoque multidisciplinario que abarca desde el <span class=\"text-secondary\">desarrollo de videojuegos</span> hasta la creación de <span class=\"text-primary\">soluciones interactivas personalizadas</span>.<br class=\"hidden md:block\" />Nuestra trayectoria nos ha permitido dominar herramientas como Unity, Unreal Engine, Blender, y tecnologías web de vanguardia. Gracias a este recorrido, hemos aprendido a combinar <em>creatividad, técnica y visión estratégica</em> para ofrecer proyectos sólidos, inmersivos y funcionales.",
 			"experiences": [
 				{
@@ -117,7 +117,7 @@
 		},
 		"gallery": {
 			"id": "galería",
-			"title": "🎨 Galería de ideas hechas realidad 🎨",
+			"title": "Galería de ideas hechas realidad",
 			"subtitle": "Cada imagen cuenta una historia: la tuya puede ser la próxima",
 			"images": [
 				{
@@ -164,7 +164,7 @@
 		},
 		"projects": {
 			"id": "proyectos",
-			"title": "🎮 Proyectos Destacados 🎮",
+			"title": "Proyectos Destacados",
 			"projects": [
 				{
 					"title": "Rizzita Punch",
@@ -177,7 +177,7 @@
 		},
 		"faq": {
 			"id": "faq",
-			"title": "🤔 Preguntas Frecuentes 🤔",
+			"title": "Preguntas Frecuentes",
 			"faqs": [
 				{
 					"question": "¿Qué tipo de proyectos aceptan?",
