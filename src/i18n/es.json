@@ -121,42 +121,42 @@
 			"subtitle": "Cada imagen cuenta una historia: la tuya puede ser la próxima",
 			"images": [
 				{
-					"image": "/colonial/images/modelo1.webp",
+					"image": "/xitry/images/modelo1.webp",
 					"title": "Excavadora Robusta",
 					"description": "Modelo 3D de excavadora industrial detallada y optimizada para videojuegos. Diseño robusto y texturas de alta calidad para un realismo visual impactante."
 				},
 				{
-					"image": "/colonial/images/modelo2.webp",
+					"image": "/xitry/images/modelo2.webp",
 					"title": "Excavadora Futurista",
 					"description": "Modelo 3D de excavadora con diseño futurista y detalles de alta calidad, ideal para entornos de ciencia ficción o industriales avanzados."
 				},
 				{
-					"image": "/colonial/images/modelo3.webp",
+					"image": "/xitry/images/modelo3.webp",
 					"title": "Excavadora con Barrena",
 					"description": "Modelo 3D detallado de una excavadora equipada con barrena industrial. Ideal para proyectos de construcción y simulación de perforación de terrenos."
 				},
 				{
-					"image": "/colonial/images/modelo4.webp",
+					"image": "/xitry/images/modelo4.webp",
 					"title": "Excavadora con Pinza",
 					"description": "Modelo 3D de excavadora equipada con pinza de agarre de alta resistencia. Perfecto para simulaciones de reciclaje, demolición o manipulación de materiales pesados."
 				},
 				{
-					"image": "/colonial/images/modelo5.webp",
+					"image": "/xitry/images/modelo5.webp",
 					"title": "Excavadora con Sierra Circular",
 					"description": "Modelo 3D de excavadora equipada con una potente sierra circular. Ideal para juegos que requieran tala, desmonte o corte de materiales resistentes."
 				},
 				{
-					"image": "/colonial/images/modelo6.webp",
+					"image": "/xitry/images/modelo6.webp",
 					"title": "Cañón Medieval",
 					"description": "Modelo 3D detallado de un cañón medieval de bronce y madera. Ideal para juegos de estrategia, rol o aventuras históricas."
 				},
 				{
-					"image": "/colonial/images/modelo7.webp",
+					"image": "/xitry/images/modelo7.webp",
 					"title": "Hacha de Mano",
 					"description": "Modelo 3D detallado de un hacha de mano de madera y metal. Ideal para juegos de supervivencia, simulación o ambientados en épocas pasadas."
 				},
 				{
-					"image": "/colonial/images/modelo8.webp",
+					"image": "/xitry/images/modelo8.webp",
 					"title": "Cañón con Balas",
 					"description": "Modelo 3D detallado de un cañón de época con municiones de bola de cañón. Perfecto para juegos de piratas, batallas navales históricas o simulaciones de asedio."
 				}
@@ -168,7 +168,7 @@
 			"projects": [
 				{
 					"title": "Rizzita Punch",
-					"image": "/colonial/images/rizzita.jpg",
+					"image": "/xitry/images/rizzita.jpg",
 					"alt": "Proyecto Rizzita Punch",
 					"description": "El Gran combate de Rizzita y sus amigos,para proteger Frutyland y la comida sana de la comida ultra procesada, del malvado Mr. CAO"
 				}
@@ -284,48 +284,6 @@
 				"tagline": "Impulsando la creatividad con tecnología desde",
 				"copyright": "© 2025 Xitry Games. Todos los derechos reservados."
 			}
-		},
-		"carousel": [
-			{
-				"title": "Excavadora Robusta",
-				"description": "Modelo 3D de excavadora industrial detallada y optimizada para videojuegos. Diseño robusto y texturas de alta calidad para un realismo visual impactante.",
-				"image": "/colonial/images/modelo1.webp"
-			},
-			{
-				"title": "Excavadora Futurista",
-				"description": "Modelo 3D de excavadora con diseño futurista y detalles de alta calidad, ideal para entornos de ciencia ficción o industriales avanzados.",
-				"image": "/colonial/images/modelo2.webp"
-			},
-			{
-				"title": "Excavadora con Barrena",
-				"description": "Modelo 3D detallado de una excavadora equipada con barrena industrial. Ideal para proyectos de construcción y simulación de perforación de terrenos.",
-				"image": "/colonial/images/modelo3.webp"
-			},
-			{
-				"title": "Excavadora con Pinza",
-				"description": "Modelo 3D de excavadora equipada con pinza de agarre de alta resistencia. Perfecta para simulaciones de reciclaje, demolición o manipulación de materiales pesados.",
-				"image": "/colonial/images/modelo4.webp"
-			},
-			{
-				"title": "Excavadora con Sierra Circular",
-				"description": "Modelo 3D de excavadora equipada con una potente sierra circular. Ideal para juegos que requieran tala, desmonte o corte de materiales resistentes.",
-				"image": "/colonial/images/modelo5.webp"
-			},
-			{
-				"title": "Cañón Medieval",
-				"description": "Modelo 3D detallado de un cañón medieval de bronce y madera. Ideal para juegos de estrategia, rol o aventuras históricas.",
-				"image": "/colonial/images/modelo6.webp"
-			},
-			{
-				"title": "Hacha de Mano",
-				"description": "Modelo 3D detallado de un hacha de mano de madera y metal. Ideal para juegos de supervivencia, simulación o ambientados en épocas pasadas.",
-				"image": "/colonial/images/modelo7.webp"
-			},
-			{
-				"title": "Cañón con Balas",
-				"description": "Modelo 3D detallado de un cañón de época con municiones de bola de cañón. Perfecto para juegos de piratas, batallas navales históricas o simulaciones de asedio.",
-				"image": "/colonial/images/modelo8.webp"
-			}
-		]
+		}
 	}
 }

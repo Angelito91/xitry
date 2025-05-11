@@ -1,6 +1,6 @@
-# Colonial Innov Website
+# Xitry Games Website
 
-Welcome to the **Colonial Innov** website repository! This is the official website for Colonial Innov, a creative tech company that specializes in game development, 3D modeling, virtual environments, and more. The website showcases our services, projects, and how we bring ideas to life using cutting-edge technology.
+Welcome to the **Xitry Games** website repository! This is the official website for Xitry Games, a creative tech company that specializes in game development, 3D modeling, virtual environments, and more. The website showcases our services, projects, and how we bring ideas to life using cutting-edge technology.
 
 ## Features
 
