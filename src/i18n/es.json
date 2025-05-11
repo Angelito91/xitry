@@ -1,8 +1,8 @@
 {
-	"title": "COLONIAL INNOV – Creatividad y Tecnología en Videojuegos",
-	"description": "En COLONIAL INNOV damos vida digital a tus ideas: videojuegos, software a medida, mundos virtuales, animaciones y más.",
+	"title": "Xitry Games – Creatividad y Tecnología en Videojuegos",
+	"description": "En Xitry Games damos vida digital a tus ideas: videojuegos, software a medida, mundos virtuales, animaciones y más.",
 	"keywords": "videojuegos, desarrollo, animación 3D, modelado, mundos virtuales, creatividad digital, software personalizado",
-	"author": "COLONIAL INNOV",
+	"author": "Xitry Games",
 	"sections": {
 		"header": {
 			"navLinks": [
@@ -18,14 +18,14 @@
 		"hero": {
 			"id": "inicio",
 			"title": "✨ Donde la creatividad cobra vida digital ✨",
-			"description": "En <span class=\"text-primary font-medium\">COLONIAL INNOV</span>, somos más que un estudio de desarrollo de videojuegos: somos creadores de experiencias interactivas, mundos virtuales y soluciones tecnológicas a medida.",
+			"description": "En <span class=\"text-primary font-medium\">Xitry Games</span>, somos más que un estudio de desarrollo de videojuegos: somos creadores de experiencias interactivas, mundos virtuales y soluciones tecnológicas a medida.",
 			"button": "► Haz que tus ideas se hagan realidad"
 		},
 		"services": {
 			"id": "servicios",
 			"title": "¿Cómo Transformamos tus Ideas?",
 			"description": "Ofrecemos servicios especializados en tecnología, creatividad e innovación digital.",
-			"more": "Tanto si eres una empresa que busca una solución digital, un estudio que necesita apoyo creativo o técnico, o un soñador con una gran idea, <span class=\"text-primary font-semibold\">COLONIAL INNOV</span> es tu socio ideal.",
+			"more": "Tanto si eres una empresa que busca una solución digital, un estudio que necesita apoyo creativo o técnico, o un soñador con una gran idea, <span class=\"text-primary font-semibold\">Xitry Games</span> es tu socio ideal.",
 			"services": [
 				{
 					"title": "🎮 Desarrollo de videojuegos",
@@ -52,7 +52,7 @@
 		"experiences": {
 			"id": "experiencias",
 			"title": "🏆 Nuestra Experiencia 🏆",
-			"description": "Con más de <span class=\"text-primary font-semibold\">5 años de experiencia</span> en la industria creativa y tecnológica, en <strong>COLONIAL INNOV</strong> hemos cultivado un enfoque multidisciplinario que abarca desde el <span class=\"text-secondary\">desarrollo de videojuegos</span> hasta la creación de <span class=\"text-primary\">soluciones interactivas personalizadas</span>.<br class=\"hidden md:block\" />Nuestra trayectoria nos ha permitido dominar herramientas como Unity, Unreal Engine, Blender, y tecnologías web de vanguardia. Gracias a este recorrido, hemos aprendido a combinar <em>creatividad, técnica y visión estratégica</em> para ofrecer proyectos sólidos, inmersivos y funcionales.",
+			"description": "Con más de <span class=\"text-primary font-semibold\">5 años de experiencia</span> en la industria creativa y tecnológica, en <strong>Xitry Games</strong> hemos cultivado un enfoque multidisciplinario que abarca desde el <span class=\"text-secondary\">desarrollo de videojuegos</span> hasta la creación de <span class=\"text-primary\">soluciones interactivas personalizadas</span>.<br class=\"hidden md:block\" />Nuestra trayectoria nos ha permitido dominar herramientas como Unity, Unreal Engine, Blender, y tecnologías web de vanguardia. Gracias a este recorrido, hemos aprendido a combinar <em>creatividad, técnica y visión estratégica</em> para ofrecer proyectos sólidos, inmersivos y funcionales.",
 			"experiences": [
 				{
 					"title": "🎮 Desarrollo de Videojuegos",
@@ -200,7 +200,7 @@
 		"contact": {
 			"id": "contacto",
 			"title": "¿Tienes un proyecto? ¡Hablemos!",
-			"description": "Ya sea una idea loca o una misión técnica, en COLONIAL INNOV estamos listos para escucharla. Escríbenos o llámanos directamente.",
+			"description": "Ya sea una idea loca o una misión técnica, en Xitry Games estamos listos para escucharla. Escríbenos o llámanos directamente.",
 			"form": {
 				"name": {
 					"label": "Nombre completo",
@@ -279,10 +279,10 @@
 				}
 			],
 			"credits": {
-				"text": "Sitio diseñado por el equipo de COLONIAL INNOV 💜",
+				"text": "Sitio diseñado por el equipo de Xitry Games 💜",
 				"year": 2019,
 				"tagline": "Impulsando la creatividad con tecnología desde",
-				"copyright": "© 2025 COLONIAL INNOV. Todos los derechos reservados."
+				"copyright": "© 2025 Xitry Games. Todos los derechos reservados."
 			}
 		},
 		"carousel": [
