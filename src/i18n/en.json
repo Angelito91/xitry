@@ -17,7 +17,7 @@
 		},
 		"hero": {
 			"id": "home",
-			"title": "✨ Where Creativity Comes to Digital Life ✨",
+			"title": "Where Creativity Comes to Digital Life",
 			"description": "At <span class=\"text-primary font-medium\">Xitry Games</span>, we are more than just a video game development studio: we are creators of interactive experiences, virtual worlds, and tailored technological solutions.",
 			"button": "► Make Your Ideas a Reality"
 		},
@@ -51,7 +51,7 @@
 		},
 		"experiences": {
 			"id": "experiences",
-			"title": "🏆 Our Experience 🏆",
+			"title": "Our Experience",
 			"description": "With more than <span class=\"text-primary font-semibold\">5 years of experience</span> in the creative and technological industry, at <strong>Xitry Games</strong> we have cultivated a multidisciplinary approach that ranges from <span class=\"text-secondary\">video game development</span> to the creation of <span class=\"text-primary\">custom interactive solutions</span>.<br class=\"hidden md:block\" />Our trajectory has allowed us to master tools such as Unity, Unreal Engine, Blender, and cutting-edge web technologies. Thanks to this journey, we have learned to combine <em>creativity, technique, and strategic vision</em> to offer solid, immersive, and functional projects.",
 			"experiences": [
 				{
@@ -117,7 +117,7 @@
 		},
 		"gallery": {
 			"id": "gallery",
-			"title": "🎨 Gallery of Ideas Made Real 🎨",
+			"title": "Gallery of Ideas Made Real",
 			"subtitle": "Each image tells a story: yours could be the next",
 			"images": [
 				{
@@ -177,7 +177,7 @@
 		},
 		"faq": {
 			"id": "faq",
-			"title": "🤔 Frequently Asked Questions 🤔",
+			"title": "Frequently Asked Questions",
 			"faqs": [
 				{
 					"question": "What type of projects do you accept?",
@@ -267,15 +267,7 @@
 			"socialLinks": [
 				{
 					"icon": "email",
-					"href": "mailto:colonial.innov@gmail.com"
-				},
-				{
-					"icon": "facebook",
-					"href": "https://www.facebook.com/share/18t98HSbQu/"
-				},
-				{
-					"icon": "linkedin",
-					"href": "https://www.linkedin.com/in/colonial-innov-78247733a/"
+					"href": "mailto:contact@xitrygame@gmail.com"
 				}
 			],
 			"credits": {

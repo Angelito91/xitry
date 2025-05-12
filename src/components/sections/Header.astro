@@ -3,7 +3,7 @@ import SwitchLang from "@components/ui/SwitchLang.astro";
 import type { HeaderSection } from "src/types";
 
 interface Props {
-	i18n: HeaderSection;
+    i18n: HeaderSection;
 }
 
 const { i18n } = Astro.props;
@@ -92,8 +92,17 @@ const navLinksSlice = navLinks.slice(1, indexContact);
         <a
             href={`#${navLinks[0]}`}
             aria-label={navLinks[0]}
-            class="text-lg font-bold transition hover:scale-110 hover:rotate-1"
+            class="flex items-center justify-center text-lg font-bold transition hover:scale-110 hover:rotate-1"
         >
+            <img
+                alt="Logo de la compañía"
+                src="/xitry/images/logo.webp"
+                width="80"
+                height="80"
+                loading="lazy"
+                class="object-cover"
+
+            />
             <span
                 class="text-primary transition duration-150 drop-shadow-[0_0_8px_#BFC5C9]"
                 >XITRY</span

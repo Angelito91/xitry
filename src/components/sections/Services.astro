@@ -3,7 +3,7 @@ import SectionContainer from "@components/ui/SectionContainer.astro";
 import type { ServicesSection } from "src/types";
 
 interface Props {
-	i18n: ServicesSection;
+    i18n: ServicesSection;
 }
 
 const { i18n } = Astro.props;
@@ -15,9 +15,7 @@ const { id, title, description, more, services } = i18n;
         <h2
             class="mb-4 text-2xl font-extrabold tracking-wide sm:text-3xl md:text-4xl text-secondary sm:mb-6 drop-shadow"
         >
-            <span class="text-yellow-500">✦</span>
             {title}
-            <span class="text-yellow-500">✦</span>
         </h2>
 
         <p

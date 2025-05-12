@@ -17,7 +17,7 @@
 		},
 		"hero": {
 			"id": "accueil",
-			"title": "✨ Là où la créativité prend vie numérique ✨",
+			"title": "Là où la créativité prend vie numérique",
 			"description": "Chez <span class=\"text-primary font-medium\">COLONIAL INNOV</span>, nous sommes plus qu'un studio de développement de jeux vidéo : nous sommes des créateurs d'expériences interactives, de mondes virtuels et de solutions technologiques sur mesure.",
 			"button": "► Donnez vie à vos idées"
 		},
@@ -51,7 +51,7 @@
 		},
 		"experiences": {
 			"id": "expériences",
-			"title": "🏆 Notre expérience 🏆",
+			"title": "Notre expérience",
 			"description": "Avec plus de <span class=\"text-primary font-semibold\">5 ans d'expérience</span> dans l'industrie créative et technologique, chez <strong>COLONIAL INNOV</strong>, nous avons cultivé une approche multidisciplinaire qui s'étend du <span class=\"text-secondary\">développement de jeux vidéo</span> à la création de <span class=\"text-primary\">solutions interactives personnalisées</span>.<br class=\"hidden md:block\" />Notre parcours nous a permis de maîtriser des outils tels que Unity, Unreal Engine, Blender et des technologies web de pointe. Grâce à ce parcours, nous avons appris à combiner <em>créativité, technique et vision stratégique</em> pour proposer des projets solides, immersifs et fonctionnels.",
 			"experiences": [
 				{
@@ -117,7 +117,7 @@
 		},
 		"gallery": {
 			"id": "galerie",
-			"title": "🎨 Galerie d'idées devenues réalité 🎨",
+			"title": "Galerie d'idées devenues réalité",
 			"subtitle": "Chaque image raconte une histoire : la vôtre pourrait être la prochaine",
 			"images": [
 				{
@@ -164,7 +164,7 @@
 		},
 		"projects": {
 			"id": "projets",
-			"title": "🎮 Projets phares 🎮",
+			"title": "Projets phares",
 			"projects": [
 				{
 					"title": "Rizzita Punch",
@@ -177,7 +177,7 @@
 		},
 		"faq": {
 			"id": "faq",
-			"title": "🤔 Foire Aux Questions 🤔",
+			"title": "Foire Aux Questions",
 			"faqs": [
 				{
 					"question": "Quel type de projets acceptez-vous ?",
@@ -267,15 +267,7 @@
 			"socialLinks": [
 				{
 					"icon": "email",
-					"href": "mailto:colonial.innov@gmail.com"
-				},
-				{
-					"icon": "facebook",
-					"href": "https://www.facebook.com/share/18t98HSbQu/"
-				},
-				{
-					"icon": "linkedin",
-					"href": "https://www.linkedin.com/in/colonial-innov-78247733a/"
+					"href": "mailto:contact@xitrygame@gmail.com"
 				}
 			],
 			"credits": {
