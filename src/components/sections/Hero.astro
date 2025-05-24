@@ -3,16 +3,38 @@ import SectionContainer from "@components/ui/SectionContainer.astro";
 import type { HeroSection } from "src/types";
 
 interface Props {
-	i18n: HeroSection;
+    i18n: HeroSection;
 }
 
 const { i18n } = Astro.props;
 const { title, description, button, id } = i18n;
 ---
 
-<SectionContainer id={id} class="px-4 sm:px-6 lg:px-8">
-    <div class="relative mx-auto text-center">
-        <!-- <div class="relative z-10 max-w-4xl mx-auto">
+<SectionContainer id={id} class="relative px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <!-- Video de fondo -->
+    <video
+        id="hero-video"
+        autoplay
+        muted
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000"
+    >
+        <source src="/xitry/rizita.mp4" type="video/mp4" />
+        Tu navegador no admite el elemento <code>video</code>.
+    </video>
+
+    <!-- Capa de gradiente negro -->
+    <div
+        id="hero-gradient"
+        class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 z-10"
+    >
+    </div>
+
+    <!-- Contenido del Hero -->
+    <div class="relative z-20 text-center">
+        <!-- Logo opcional -->
+        <!-- 
+        <div class="relative max-w-4xl mx-auto">
             <img
                 alt="Logo de la compañía"
                 src="/xitry/images/logo.webp"
@@ -21,20 +43,26 @@ const { title, description, button, id } = i18n;
                 loading="lazy"
                 class="mx-auto mb-4 object-contain aspect-square"
             />
-        </div> -->
+        </div>
+        -->
 
         <h1
+            id="hero-title"
             class="text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl md:text-5xl text-pretty text-secondary mt-48"
         >
             {title}
         </h1>
 
         <p
+            id="hero-description"
             set:html={description}
             class="max-w-2xl mx-auto mt-4 text-base font-light tracking-wide text-gray-300 sm:mt-6 sm:text-lg md:text-xl text-pretty"
         />
 
-        <div class="flex flex-wrap justify-center gap-3 mt-6 sm:mt-10 sm:gap-4">
+        <div
+            id="hero-buttons"
+            class="flex flex-wrap justify-center gap-3 mt-6 sm:mt-10 sm:gap-4"
+        >
             <a
                 href={`#${id}`}
                 class="px-5 py-2 font-bold transition-transform border rounded-md sm:px-6 sm:py-2 border-secondary text-secondary hover:bg-secondary/20 hover:scale-105 hover:rotate-1"
@@ -44,3 +72,47 @@ const { title, description, button, id } = i18n;
         </div>
     </div>
 </SectionContainer>
+
+<script is:inline>
+    const title = document.getElementById("hero-title");
+    const description = document.getElementById("hero-description");
+    const buttons = document.getElementById("hero-buttons");
+    
+    title.classList.add("opacity-0");
+    description.classList.add("opacity-0");
+    buttons.classList.add("opacity-0");
+    
+    window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+            const video = document.getElementById("hero-video");
+            const gradient = document.getElementById("hero-gradient");
+
+
+            if (video) {
+                video.classList.add("cinematic-exit");
+
+                setTimeout(() => {
+                    video.remove();
+                    gradient.classList.add("opacity-0");
+                    title.classList.remove("opacity-0");
+                    description.classList.remove("opacity-0");
+                    buttons.classList.remove("opacity-0");
+                }, 1000);
+            }
+        }, 30000);
+    });
+</script>
+
+<style>
+    @keyframes cinematicExit {
+        to {
+            /* opacity: 0; */
+            transform: scale(0.97);
+            filter: blur(4px);
+        }
+    }
+
+    .cinematic-exit {
+        animation: cinematicExit 1.2s ease-in-out forwards;
+    }
+</style>
