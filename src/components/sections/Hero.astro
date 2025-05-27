@@ -10,28 +10,24 @@ const { i18n } = Astro.props;
 const { title, description, button, id } = i18n;
 ---
 
-<SectionContainer id={id} class="relative px-4 sm:px-6 lg:px-8 overflow-hidden">
+<SectionContainer id={id} class="px-4 sm:px-6 lg:px-8 overflow-hidden">
     <!-- Video de fondo -->
-    <video
-        id="hero-video"
-        autoplay
-        muted
-        playsinline
-        class="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000"
-    >
-        <source src="/xitry/rizita.mp4" type="video/mp4" />
-        Tu navegador no admite el elemento <code>video</code>.
-    </video>
-
-    <!-- Capa de gradiente negro -->
+    <div class="absolute inset-0 w-full h-full">
+        <iframe
+            src="https://player.vimeo.com/video/1087400776?autoplay=1&loop=1&background=1&quality=min"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;"
+            title="Rizzita toma su reposo"></iframe>
+    </div>
     <div
         id="hero-gradient"
-        class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 z-10"
+        class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40 z-10"
     >
     </div>
 
     <!-- Contenido del Hero -->
-    <div class="relative z-20 text-center">
+    <div class="relative z-20 text-center min-h-screen flex flex-col items-center justify-center">
         <!-- Logo opcional -->
         <!-- 
         <div class="relative max-w-4xl mx-auto">
@@ -48,7 +44,7 @@ const { title, description, button, id } = i18n;
 
         <h1
             id="hero-title"
-            class="text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl md:text-5xl text-pretty text-secondary mt-48"
+            class="text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl md:text-5xl text-pretty text-secondary"
         >
             {title}
         </h1>
@@ -74,32 +70,16 @@ const { title, description, button, id } = i18n;
 </SectionContainer>
 
 <script is:inline>
-    const title = document.getElementById("hero-title");
-    const description = document.getElementById("hero-description");
-    const buttons = document.getElementById("hero-buttons");
-    
-    title.classList.add("opacity-0");
-    description.classList.add("opacity-0");
-    buttons.classList.add("opacity-0");
-    
     window.addEventListener("DOMContentLoaded", () => {
-        setTimeout(() => {
-            const video = document.getElementById("hero-video");
-            const gradient = document.getElementById("hero-gradient");
+        const video = document.getElementById("hero-video");
+        // const gradient = document.getElementById("hero-gradient");
 
-
-            if (video) {
-                video.classList.add("cinematic-exit");
-
-                setTimeout(() => {
-                    video.remove();
-                    gradient.classList.add("opacity-0");
-                    title.classList.remove("opacity-0");
-                    description.classList.remove("opacity-0");
-                    buttons.classList.remove("opacity-0");
-                }, 1000);
-            }
-        }, 30000);
+        video.addEventListener("ended", () => {
+            setTimeout(() => {
+                video.currentTime = 0;
+                video.play();
+            }, 1000);
+        });
     });
 </script>
 
