@@ -42,31 +42,33 @@ const { header, footer } = sections;
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&family=Exo+2:wght@300;400;600;700&display=swap"
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-			media="print"
-			onload="this.media='all'"
 		/>
-		<noscript>
-			<link
-				rel="stylesheet"
-				href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-			/>
-		</noscript>
 	</head>
-	<body
-		class="bg-gradient-to-br from-background via-background-alt to-primary/80"
-	>
+	<body>
 		<Header i18n={header} />
-		<!-- <Lights /> -->
+		<Lights />
 		<slot />
 		<Footer i18n={footer} />
 	</body>
 </html>
 
 <style>
-	html,
+	:root {
+		--font-display: "Orbitron", sans-serif;
+		--font-heading: "Rajdhani", sans-serif;
+		--font-body: "Exo 2", sans-serif;
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-family: var(--font-heading);
+		font-weight: 700;
+	}
+
 	body {
-		font-family: sans-serif;
+		font-family: var(--font-body);
 	}
 </style>
