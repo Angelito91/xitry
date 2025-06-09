@@ -1,7 +1,6 @@
 ---
 import Footer from "@components/sections/Footer.astro";
 import Header from "@components/sections/Header.astro";
-import Lights from "@components/ui/Lights.astro";
 
 import "../styles/global.css";
 
@@ -46,9 +45,8 @@ const { header, footer } = sections;
 			rel="stylesheet"
 		/>
 	</head>
-	<body>
+	<body class="bg-gradient-to-br from-background via-background-alt to-primary/80">
 		<Header i18n={header} />
-		<Lights />
 		<slot />
 		<Footer i18n={footer} />
 	</body>

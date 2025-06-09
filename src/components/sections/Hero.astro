@@ -2,7 +2,7 @@
 // Imports
 import SectionContainer from "@components/ui/SectionContainer.astro";
 import type { HeroSection } from "src/types";
-
+import Lights from "@components/ui/Lights.astro"
 // Tipos
 interface Props {
     i18n: HeroSection;
@@ -21,6 +21,7 @@ const { title, description, button, id } = i18n;
 ---
 
 <SectionContainer id={id} class="px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <Lights />
     <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-5">
         <div class="w-full md:w-2/5 text-center md:text-left">
             <h1
