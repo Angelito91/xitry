@@ -9,6 +9,11 @@ export default defineConfig({
 	base: "/xitry",
 	vite: {
 		plugins: [tailwindcss()],
+		build: {
+			minify: true,
+			cssMinify: true,
+			
+		},
 	},
 	i18n: {
 		locales: ["en", "es", "fr"],
