@@ -14,11 +14,11 @@ const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
 
 const { contact, faq, gallery, hero, projects, services, experiences } =
-	i18n.sections;
+    i18n.sections;
 ---
 
 <Layout {i18n}>
-    <Hero i18n={hero} />
+    <Hero i18n={{ hero, idSectionContact: contact.id }} />
     <Gallery i18n={gallery} />
     <Services i18n={services} />
     <Experiences i18n={experiences} />
