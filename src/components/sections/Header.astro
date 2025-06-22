@@ -22,7 +22,7 @@ const indexContact = navLinks.length - 1;
 const navLinksSlice = navLinks.slice(1, indexContact);
 
 const normalize = (link: string) => {
-    if (link === "inicio" || link === "accueil") return "overview";
+    if (link === "inicio" || link === "accueil") return "home";
     if (link === "contacto") return "contact";
     if (link === "servicios") return "services";
     if (link === "experiencias" || link === "expériences") return "experiences";
@@ -37,7 +37,7 @@ const normalize = (link: string) => {
     const navItems = document.querySelectorAll(".nav-links a");
 
     const isAriaLabelHero = (id: string) => {
-        return id === "overview" || id === "inicio" || id === "accueil";
+        return id === "home" || id === "inicio" || id === "accueil";
     };
 
     const isAriaLabelContact = (id: string) => {
@@ -207,7 +207,7 @@ const normalize = (link: string) => {
                         aria-label={link}
                         class="flex justify-center items-center gap-3 p-2 text-lg text-white capitalize transition rounded hover:bg-secondary/20"
                     >
-                        {normalize(link) === "overview" && <Home />}
+                        {normalize(link) === "home" && <Home />}
                         {normalize(link) === "gallery" && <Gallery />}
                         {normalize(link) === "experiences" && <Crown />}
                         {normalize(link) === "contact" && <Contact />}
