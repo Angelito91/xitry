@@ -5,8 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://angelito91.github.io/",
-	base: "/xitry",
+	site: "https://xitry-game.com/",
 	vite: {
 		plugins: [tailwindcss()],
 		build: {

@@ -121,42 +121,42 @@
 			"subtitle": "Each image tells a story: yours could be the next",
 			"images": [
 				{
-					"image": "/xitry/images/modelo1.webp",
+					"image": "/images/modelo1.webp",
 					"title": "Robust Excavator",
 					"description": "Detailed and optimized 3D model of an industrial excavator for video games. Robust design and high-quality textures for impactful visual realism."
 				},
 				{
-					"image": "/xitry/images/modelo2.webp",
+					"image": "/images/modelo2.webp",
 					"title": "Futuristic Excavator",
 					"description": "3D model of an excavator with a futuristic design and high-quality details, ideal for science fiction or advanced industrial environments."
 				},
 				{
-					"image": "/xitry/images/modelo3.webp",
+					"image": "/images/modelo3.webp",
 					"title": "Excavator with Auger",
 					"description": "Detailed 3D model of an excavator equipped with an industrial auger. Ideal for construction projects and terrain drilling simulations."
 				},
 				{
-					"image": "/xitry/images/modelo4.webp",
+					"image": "/images/modelo4.webp",
 					"title": "Excavator with Grapple",
 					"description": "3D model of an excavator equipped with a high-resistance grapple. Perfect for recycling, demolition, or heavy material handling simulations."
 				},
 				{
-					"image": "/xitry/images/modelo5.webp",
+					"image": "/images/modelo5.webp",
 					"title": "Excavator with Circular Saw",
 					"description": "3D model of an excavator equipped with a powerful circular saw. Ideal for games requiring logging, clearing, or cutting resistant materials."
 				},
 				{
-					"image": "/xitry/images/modelo6.webp",
+					"image": "/images/modelo6.webp",
 					"title": "Medieval Cannon",
 					"description": "Detailed 3D model of a medieval bronze and wood cannon. Ideal for strategy, role-playing, or historical adventure games."
 				},
 				{
-					"image": "/xitry/images/modelo7.webp",
+					"image": "/images/modelo7.webp",
 					"title": "Hand Axe",
 					"description": "Detailed 3D model of a wood and metal hand axe. Ideal for survival, simulation, or games set in past eras."
 				},
 				{
-					"image": "/xitry/images/modelo8.webp",
+					"image": "/images/modelo8.webp",
 					"title": "Cannon with Cannonballs",
 					"description": "Detailed 3D model of a period cannon with cannonball ammunition. Perfect for pirate games, historical naval battles, or siege simulations."
 				}
@@ -168,7 +168,7 @@
 			"projects": [
 				{
 					"title": "Rizzita Punch",
-					"image": "/xitry/images/rizzita.jpg",
+					"image": "/images/rizzita.jpg",
 					"alt": "Rizzita Punch Project",
 					"description": "The Great battle of Rizzita and her friends, to protect Frutyland and healthy food from ultra-processed food, from the evil Mr. CAO"
 				}

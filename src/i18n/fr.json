@@ -121,42 +121,42 @@
 			"subtitle": "Chaque image raconte une histoire : la vôtre pourrait être la prochaine",
 			"images": [
 				{
-					"image": "/xitry/images/modelo1.webp",
+					"image": "/images/modelo1.webp",
 					"title": "Excavatrice robuste",
 					"description": "Modèle 3D d'une excavatrice industrielle détaillée et optimisée pour les jeux vidéo. Conception robuste et textures de haute qualité pour un réalisme visuel saisissant."
 				},
 				{
-					"image": "/xitry/images/modelo2.webp",
+					"image": "/images/modelo2.webp",
 					"title": "Excavatrice futuriste",
 					"description": "Modèle 3D d'une excavatrice au design futuriste et aux détails de haute qualité, idéal pour les environnements de science-fiction ou industriels avancés."
 				},
 				{
-					"image": "/xitry/images/modelo3.webp",
+					"image": "/images/modelo3.webp",
 					"title": "Excavatrice avec tarière",
 					"description": "Modèle 3D détaillé d'une excavatrice équipée d'une tarière industrielle. Idéal pour les projets de construction et les simulations de forage de terrain."
 				},
 				{
-					"image": "/xitry/images/modelo4.webp",
+					"image": "/images/modelo4.webp",
 					"title": "Excavatrice avec pince",
 					"description": "Modèle 3D d'une excavatrice équipée d'une pince de préhension haute résistance. Parfait pour les simulations de recyclage, de démolition ou de manipulation de matériaux lourds."
 				},
 				{
-					"image": "/xitry/images/modelo5.webp",
+					"image": "/images/modelo5.webp",
 					"title": "Excavatrice avec scie circulaire",
 					"description": "Modèle 3D d'une excavatrice équipée d'une puissante scie circulaire. Idéal pour les jeux nécessitant l'abattage, le défrichage ou la coupe de matériaux résistants."
 				},
 				{
-					"image": "/xitry/images/modelo6.webp",
+					"image": "/images/modelo6.webp",
 					"title": "Canon médiéval",
 					"description": "Modèle 3D détaillé d'un canon médiéval en bronze et en bois. Idéal pour les jeux de stratégie, de rôle ou d'aventures historiques."
 				},
 				{
-					"image": "/xitry/images/modelo7.webp",
+					"image": "/images/modelo7.webp",
 					"title": "Hache à main",
 					"description": "Modèle 3D détaillé d'une hache à main en bois et en métal. Idéal pour les jeux de survie, de simulation ou se déroulant à des époques passées."
 				},
 				{
-					"image": "/xitry/images/modelo8.webp",
+					"image": "/images/modelo8.webp",
 					"title": "Canon avec boulets de canon",
 					"description": "Modèle 3D détaillé d'un canon d'époque avec des munitions de boulets de canon. Parfait pour les jeux de pirates, les batailles navales historiques ou les simulations de siège."
 				}
@@ -168,7 +168,7 @@
 			"projects": [
 				{
 					"title": "Rizzita Punch",
-					"image": "/xitry/images/rizzita.jpg",
+					"image": "/images/rizzita.jpg",
 					"alt": "Projet Rizzita Punch",
 					"description": "Le grand combat de Rizzita et ses amis, pour protéger Frutyland et la nourriture saine de la malbouffe, du méchant M. CAO"
 				}
