@@ -2,6 +2,15 @@
 import SwitchLang from "@components/ui/SwitchLang.astro";
 import type { HeaderSection } from "src/types";
 
+// Icons
+import Home from "@components/icons/Home.astro";
+import Gallery from "@components/icons/Gallery.astro";
+import Crown from "@components/icons/Crown.astro";
+import Contact from "@components/icons/Contact.astro";
+import Faq from "@components/icons/Faq.astro";
+import Services from "@components/icons/Services.astro";
+import Projects from "@components/icons/Project.astro";
+
 interface Props {
     i18n: HeaderSection;
 }
@@ -11,6 +20,16 @@ const { i18n } = Astro.props;
 const navLinks = i18n.navLinks;
 const indexContact = navLinks.length - 1;
 const navLinksSlice = navLinks.slice(1, indexContact);
+
+const normalize = (link: string) => {
+    if (link === "inicio" || link === "accueil") return "overview";
+    if (link === "contacto") return "contact";
+    if (link === "servicios") return "services";
+    if (link === "experiencias" || link === "expériences") return "experiences";
+    if (link === "proyectos" || link === "projets") return "projects";
+    if (link === "galería" || link === "galerie") return "gallery";
+    return link;
+};
 ---
 
 <script>
@@ -179,26 +198,26 @@ const navLinksSlice = navLinks.slice(1, indexContact);
         <!-- Menú deslizante -->
         <div
             id="mobile-menu"
-            class="fixed top-0 right-0 z-40 flex flex-col items-start w-3/4 max-w-xs min-h-full gap-6 px-6 py-10 transition-transform duration-300 ease-in-out transform translate-x-full shadow-lg bg-background backdrop-blur-lg md:hidden"
+            class="fixed top-0 right-0 z-40 flex flex-col items-center justify-center w-3/4 max-w-xs min-h-screen gap-10 px-6 py-10 transition-transform duration-300 ease-in-out transform translate-x-full shadow-lg bg-background backdrop-blur-lg md:hidden"
         >
             {
                 navLinks.map((link) => (
                     <a
                         href={`#${link}`}
                         aria-label={link}
-                        class="p-2 text-lg text-white capitalize transition rounded hover:bg-secondary/20"
+                        class="flex justify-center items-center gap-3 p-2 text-lg text-white capitalize transition rounded hover:bg-secondary/20"
                     >
+                        {normalize(link) === "overview" && <Home />}
+                        {normalize(link) === "gallery" && <Gallery />}
+                        {normalize(link) === "experiences" && <Crown />}
+                        {normalize(link) === "contact" && <Contact />}
+                        {normalize(link) === "faq" && <Faq />}
+                        {normalize(link) === "projects" && <Projects />}
+                        {normalize(link) === "services" && <Services />}
                         {link}
                     </a>
                 ))
             }
-            <a
-                href={`#${navLinks[indexContact]}`}
-                aria-label={navLinks[indexContact]}
-                class="p-2 capitalize transition transform rounded-xl hover:bg-primary/20 hover:scale-110 hover:rotate-1"
-            >
-                {navLinks[indexContact]}
-            </a>
         </div>
     </nav>
 </header>
