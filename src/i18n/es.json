@@ -267,6 +267,13 @@
 				"tagline": "Impulsando la creatividad con tecnología desde",
 				"copyright": "© 2025 Xitry Game. Todos los derechos reservados."
 			}
+		},
+		"notFound": {
+			"id": "not-found",
+			"title": "404 - Página no encontrada",
+			"subtitle": "La página que buscas no existe.",
+			"message": "Es posible que la página que buscas haya sido eliminada, renombrada o está temporalmente deshabilitada.",
+			"button": "Volver a la página principal"
 		}
 	}
 }

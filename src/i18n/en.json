@@ -267,6 +267,13 @@
 				"tagline": "Boosting creativity with technology since",
 				"copyright": "© 2025 Xitry Game. All rights reserved."
 			}
+		},
+		"notFound": {
+			"id": "not-found",
+			"title": "404 - Page Not Found",
+			"subtitle": "The page you are looking for does not exist.",
+			"message": "It's possible that the page you are looking for has been deleted, renamed, or is temporarily unavailable.",
+			"button": "Return to Home"
 		}
 	}
 }

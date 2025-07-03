@@ -1,0 +1,79 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Lights from "@components/ui/Lights.astro";
+import SectionContainer from "@components/ui/SectionContainer.astro";
+import { getI18n } from "@i18n/index";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+
+const { language, sections } = i18n;
+const { notFound } = sections;
+const { id, title, subtitle, message, button } = notFound;
+---
+
+<Layout {i18n}>
+  <SectionContainer
+    id={id}
+    class="min-h-[70vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-16 md:py-24"
+  >
+    <Lights />
+    <div class="text-center max-w-3xl mx-auto">
+      <h1
+        class="text-6xl md:text-8xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-secondary to-secondary/70 animate-fade-up"
+        style="--animation-delay: 0.1s; opacity: 0;"
+      >
+        {title}
+      </h1>
+
+      <h2
+        class="text-2xl md:text-4xl font-bold mb-6 text-secondary animate-fade-up"
+        style="--animation-delay: 0.2s; opacity: 0;"
+      >
+        {subtitle}
+      </h2>
+
+      <p
+        class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-up"
+        style="--animation-delay: 0.3s; opacity: 0;"
+      >
+        {message}
+      </p>
+
+      <a
+        href={`/${language}/`}
+        class="inline-block px-8 py-3 font-semibold rounded-xl border-2 border-secondary text-secondary bg-transparent hover:bg-secondary hover:text-background shadow-md hover:shadow-xl transition-all duration-300 ease-in-out scale-100 hover:scale-[1.05] focus:outline-none focus:ring-4 focus:ring-secondary/30 animate-fade-up"
+        style="--animation-delay: 0.4s; opacity: 0;"
+      >
+        {button}
+      </a>
+
+      <div
+        class="mt-12 text-gray-500 text-sm animate-fade-up"
+        style="--animation-delay: 0.5s; opacity: 0;"
+      >
+        <span class="block">Error 404</span>
+        <span class="block mt-1"
+          >Not Found • No Encontrado • Page non trouvée</span
+        >
+      </div>
+    </div>
+  </SectionContainer>
+</Layout>
+
+<style>
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-up {
+    animation: fade-up 0.6s ease-out forwards;
+    animation-delay: var(--animation-delay, 0s);
+  }
+</style>

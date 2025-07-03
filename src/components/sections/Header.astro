@@ -14,7 +14,7 @@ import Projects from "@components/icons/Project.astro";
 import Services from "@components/icons/Services.astro";
 
 interface Props {
-	i18n: HeaderSection;
+    i18n: HeaderSection;
 }
 
 const { i18n } = Astro.props;
@@ -24,18 +24,21 @@ const indexContact = navLinks.length - 1;
 const navLinksSlice = navLinks.slice(1, indexContact);
 
 const normalize = (link: string) => {
-	if (link === "inicio" || link === "accueil") return "home";
-	if (link === "contacto") return "contact";
-	if (link === "servicios") return "services";
-	if (link === "experiencias" || link === "expériences") return "experiences";
-	if (link === "proyectos" || link === "projets") return "projects";
-	if (link === "galería" || link === "galerie") return "gallery";
-	return link;
+    if (link === "inicio" || link === "accueil") return "home";
+    if (link === "contacto") return "contact";
+    if (link === "servicios") return "services";
+    if (link === "experiencias" || link === "expériences") return "experiences";
+    if (link === "proyectos" || link === "projets") return "projects";
+    if (link === "galería" || link === "galerie") return "gallery";
+    return link;
 };
 ---
 
 <script>
     const sections = document.querySelectorAll("section");
+    const sectionsFiltered = Array.from(sections).filter(
+        (section) => section.id !== "not-found",
+    );
     const navItems = document.querySelectorAll(".nav-links a");
 
     const isAriaLabelHero = (id: string) => {
@@ -75,7 +78,7 @@ const normalize = (link: string) => {
         threshold: 0.5,
     });
 
-    sections.forEach((section) => {
+    sectionsFiltered.forEach((section) => {
         observer.observe(section);
     });
 
@@ -83,7 +86,7 @@ const normalize = (link: string) => {
         if (document.visibilityState === "hidden") {
             observer.disconnect();
         } else {
-            sections.forEach((section) => {
+            sectionsFiltered.forEach((section) => {
                 observer.observe(section);
             });
         }
@@ -142,7 +145,7 @@ const normalize = (link: string) => {
             }
         </div>
         <div class="items-center justify-center hidden gap-2 md:flex">
-            <SwitchLang id="desktop"/>
+            <SwitchLang id="desktop" />
             <div
                 class="flex items-center justify-center gap-2 p-2 nav-links rounded-xl bg-accent/70"
             >

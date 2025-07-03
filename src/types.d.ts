@@ -18,6 +18,7 @@ interface Sections {
 	faq: FAQSection;
 	contact: ContactSection;
 	footer: FooterSection;
+	notFound: NotFoundSection;
 }
 
 // Componentes reutilizables
@@ -139,4 +140,12 @@ export interface FooterSection {
 		tagline: string;
 		copyright: string;
 	};
+}
+
+export interface NotFoundSection {
+	id: string;
+	title: string;
+	subtitle: string;
+	message: string;
+	button: string;
 }
