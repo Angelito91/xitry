@@ -10,7 +10,6 @@ interface Props {
 	i18n: i18nWebsite;
 }
 
-const { url } = Astro;
 const { i18n } = Astro.props;
 const { title, description, keywords, author, sections, language } = i18n;
 const { header, footer } = sections;
@@ -26,24 +25,73 @@ const { header, footer } = sections;
 		<meta name="description" content={description} />
 		<meta name="keywords" content={keywords} />
 		<meta name="author" content={author} />
+		<meta name="robots" content="index, follow" />
 
-		<link rel="alternate" href={`${url.href}es/`} hreflang="es" />
-		<link rel="alternate" href={`${url.href}en/`} hreflang="en" />
-		<link rel="alternate" href={`${url.href}fr/`} hreflang="fr" />
+		<!-- Hreflang para internacionalización -->
+		<link
+			rel="alternate"
+			hreflang="x-default"
+			href="https://xitry-game.com"
+		/>
+		<link rel="alternate" hreflang="es" href="https://xitry-game.com/es" />
+		<link rel="alternate" hreflang="en" href="https://xitry-game.com/en" />
+		<link rel="alternate" hreflang="fr" href="https://xitry-game.com/fr" />
 
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://xitry-game.com" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content="images/logo.webp" />
-		<meta property="og:url" content={url.href} />
-		<meta property="og:type" content="website" />
+		<meta
+			property="og:image"
+			content="https://xitry-game.com/images/logo.webp"
+		/>
+		<meta property="og:image:width" content="500" />
+		<meta property="og:image:height" content="500" />
+		<meta property="og:site_name" content="Xitry Game" />
 		<meta property="og:locale" content={language} />
+		<meta property="og:locale:alternate" content="es" />
+		<meta property="og:locale:alternate" content="en" />
+		<meta property="og:locale:alternate" content="fr" />
 
+		<!-- Preconnect y Preload -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
+			rel="preload"
 			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&family=Exo+2:wght@300;400;600;700&display=swap"
-			rel="stylesheet"
+			as="style"
+			onload="this.onload=null;this.rel='stylesheet'"
 		/>
+		<noscript>
+			<link
+				href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&family=Exo+2:wght@300;400;600;700&display=swap"
+				rel="stylesheet"
+			/>
+		</noscript>
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@XitryGame" />
+		<meta name="twitter:creator" content="@XitryGame" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta
+			name="twitter:image"
+			content="https://xitry-game.com/images/logo.webp"
+		/>
+
+		<!-- Structured Data -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "Xitry Game",
+				"url": "https://xitry-game.com",
+				"logo": "https://xitry-game.com/images/logo.webp",
+				"description": "Desarrollo de videojuegos innovadores y experiencias interactivas"
+			}
+		</script>
 	</head>
 	<body
 		class="bg-gradient-to-br from-background via-background-alt to-primary/80"
