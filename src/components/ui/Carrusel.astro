@@ -9,71 +9,67 @@ const { i18n } = Astro.props;
 const { images } = i18n;
 ---
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+/>
 <script
   is:inline
-  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
 ></script>
 
 <div class="w-full mx-auto">
   <!-- Carrusel de escritorio -->
-  <swiper-container
-    class="hidden mySwiper md:block"
-    slides-per-view="2"
-    space-between="5"
-    navigation="true"
-    autoplay-delay="2500"
-    autoplay-disable-on-interaction="false"
-    loop="true"
-  >
-    {
-      images.map((slide) => (
-        <swiper-slide>
-          <div class="relative w-full overflow-hidden h-80 rounded-xl">
-            <img
-              src={slide.image}
-              alt={slide.title}
-              loading="lazy"
-              class="object-cover w-full h-full cursor-pointer enlargeable"
-            />
-            <div class="absolute bottom-0 left-0 right-0 p-4 text-white bg-black/50">
-              <h3 class="text-lg font-bold">{slide.title}</h3>
-              <p class="text-sm">{slide.description}</p>
-            </div>
-          </div>
-        </swiper-slide>
-      ))
-    }
-  </swiper-container>
+  <div id="splide-desktop" class="hidden md:block splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {
+          images.map((slide) => (
+            <li class="splide__slide">
+              <div class="relative w-full overflow-hidden h-80 rounded-xl">
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  loading="lazy"
+                  class="object-cover w-full h-full cursor-pointer enlargeable"
+                />
+                <div class="absolute bottom-0 left-0 right-0 p-4 text-white bg-black/50">
+                  <h3 class="text-lg font-bold">{slide.title}</h3>
+                  <p class="text-sm">{slide.description}</p>
+                </div>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
 
   <!-- Carrusel de móvil -->
-  <swiper-container
-    class="mySwiper md:hidden"
-    slides-per-view="1"
-    space-between="10"
-    navigation="true"
-    autoplay-delay="2500"
-    autoplay-disable-on-interaction="false"
-    loop="true"
-  >
-    {
-      images.map((slide) => (
-        <swiper-slide>
-          <div class="relative w-full overflow-hidden h-80 rounded-xl">
-            <img
-              src={slide.image}
-              alt={slide.title}
-              loading="lazy"
-              class="object-cover w-full h-full cursor-pointer enlargeable"
-            />
-            <div class="absolute bottom-0 left-0 right-0 p-4 text-white bg-black/50">
-              <h3 class="text-lg font-bold">{slide.title}</h3>
-              <p class="text-sm">{slide.description}</p>
-            </div>
-          </div>
-        </swiper-slide>
-      ))
-    }
-  </swiper-container>
+  <div id="splide-mobile" class="md:hidden splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {
+          images.map((slide) => (
+            <li class="splide__slide">
+              <div class="relative w-full overflow-hidden h-80 rounded-xl">
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  loading="lazy"
+                  class="object-cover w-full h-full cursor-pointer enlargeable"
+                />
+                <div class="absolute bottom-0 left-0 right-0 p-4 text-white bg-black/50">
+                  <h3 class="text-lg font-bold">{slide.title}</h3>
+                  <p class="text-sm">{slide.description}</p>
+                </div>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
 </div>
 
 <!-- Modal HTML -->
@@ -89,43 +85,68 @@ const { images } = i18n;
 
 <script is:inline>
   document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("imageModal");
-    const modalImage = document.getElementById("modalImage");
-    const enlargeableImages = document.querySelectorAll(".enlargeable");
+  // Inicializar Splide para escritorio
+  const splideDesktop = new Splide("#splide-desktop", {
+    type: "loop",
+    perPage: 2,
+    gap: "5px",
+    autoplay: true,
+    interval: 5000,
+    arrows: true,
+  }).mount();
 
-    const openModal = (src) => {
-      modalImage.src = src;
-      modal.classList.remove("hidden");
-      modal.classList.add("flex");
-      document.body.classList.add("overflow-hidden");
+  // Inicializar Splide para móvil
+  const splideMobile = new Splide("#splide-mobile", {
+    type: "loop",
+    perPage: 1,
+    gap: "10px",
+    autoplay: true,
+    interval: 5000,
+    arrows: true,
+  }).mount();
 
-      requestAnimationFrame(() => {
-        modalImage.classList.remove("scale-95", "opacity-0");
-        modalImage.classList.add("scale-100", "opacity-100");
-      });
-    };
 
-    const closeModal = () => {
-      modalImage.classList.remove("scale-100", "opacity-100");
-      modalImage.classList.add("scale-95", "opacity-0");
+  // Modal lógica
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+  const enlargeableImages = document.querySelectorAll(".enlargeable");
 
-      setTimeout(() => {
-        modal.classList.remove("flex");
-        modal.classList.add("hidden");
-        document.body.classList.remove("overflow-hidden");
-      }, 300);
-    };
+  const openModal = (src) => {
+    modalImage.src = src;
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+    document.body.classList.add("overflow-hidden");
 
-    enlargeableImages.forEach((img) => {
-      img.addEventListener("click", () => openModal(img.src));
+    requestAnimationFrame(() => {
+      modalImage.classList.remove("scale-95", "opacity-0");
+      modalImage.classList.add("scale-100", "opacity-100");
     });
+  };
 
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) closeModal();
-    });
+  const closeModal = () => {
+    modalImage.classList.remove("scale-100", "opacity-100");
+    modalImage.classList.add("scale-95", "opacity-0");
 
-    window.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" || e.key === " ") closeModal();
+    setTimeout(() => {
+      modal.classList.remove("flex");
+      modal.classList.add("hidden");
+      document.body.classList.remove("overflow-hidden");
+    }, 300);
+  };
+
+  enlargeableImages.forEach((img) => {
+    img.addEventListener("click", () => {
+      openModal(img.src);
     });
   });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" || e.key === " ") closeModal();
+  });
+});
+
 </script>
