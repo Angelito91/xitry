@@ -1,0 +1,185 @@
+---
+import { WEB3FORM_KEY } from "astro:env/client";
+import type { ContactForm } from "src/types";
+
+interface Props {
+    i18n: ContactForm;
+}
+
+interface Input {
+    id: string;
+    label: string;
+    placeholder: string | undefined;
+    type?: astroHTML.JSX.HTMLInputTypeAttribute;
+    required: boolean;
+}
+
+const { i18n } = Astro.props;
+
+const inputs: Input[] = [
+    {
+        id: "name",
+        label: i18n.name.label,
+        placeholder: i18n.name.placeholder,
+        type: "text",
+        required: true,
+    },
+    {
+        id: "email",
+        label: i18n.email.label,
+        placeholder: i18n.email.placeholder,
+        type: "email",
+        required: true,
+    },
+    {
+        id: "phone",
+        label: i18n.phone.label,
+        placeholder: i18n.phone.placeholder,
+        type: "tel",
+        required: true,
+    },
+    {
+        id: "message",
+        label: i18n.message.label,
+        placeholder: i18n.message.placeholder,
+        required: true,
+    },
+];
+---
+
+<form
+    method="post"
+    id="form"
+    class="flex flex-col w-full gap-6 px-4 mx-auto sm:px-6"
+>
+    <input type="hidden" name="access_key" value={WEB3FORM_KEY} />
+    <input
+        type="hidden"
+        name="subject"
+        value="New Submission from Xitry-game.com"
+    />
+    <input type="hidden" name="from_name" value="Xitry-Game" />
+
+    {
+        inputs.map((input) => (
+            <div id={`${input.id}-container`}>
+                <label
+                    for={input.id}
+                    class="text-left block mb-2 text-sm font-medium sm:text-base text-primary"
+                >
+                    {input.label}
+                </label>
+
+                {input.id === "message" ? (
+                    <textarea
+                        id={input.id}
+                        name={input.id}
+                        rows="5"
+                        required
+                        placeholder={input.placeholder}
+                        class="w-full px-4 py-3 text-sm text-white border resize-none bg-white/5 backdrop-blur border-white/10 rounded-xl sm:py-4 focus:outline-none focus:ring-2 focus:ring-primary sm:text-base"
+                    />
+                ) : (
+                    <input
+                        id={input.id}
+                        name={input.id}
+                        type={input.type}
+                        required
+                        placeholder={input.placeholder}
+                        class="w-full px-4 py-3 text-sm text-white border bg-white/5 backdrop-blur border-white/10 rounded-xl sm:py-4 focus:outline-none focus:ring-2 focus:ring-primary sm:text-base"
+                    />
+                )}
+            </div>
+        ))
+    }
+
+    <div
+        id="result"
+        class="text-sm font-medium text-center transition sm:text-base"
+        data-required={i18n.validation.required}
+        data-success={i18n.validation.success}
+        data-error={i18n.validation.error}
+        data-sending={i18n.validation.sending}
+    >
+    </div>
+
+    <button
+        type="submit"
+        class="w-1/2 mx-auto px-5 py-3 text-sm text-white transition border hover:cursor-pointer border-white/20 bg-white/5 backdrop-blur hover:bg-primary/10 rounded-xl sm:text-base"
+    >
+        {i18n.submit.label}
+    </button>
+</form>
+
+<script is:inline>
+    const form = document.getElementById("form");
+    const result = document.getElementById("result");
+
+    const messages = {
+        required: result.dataset.required,
+        success: result.dataset.success,
+        error: result.dataset.error,
+        sending: result.dataset.sending,
+    };
+
+    function showMessage({ message, type }) {
+        result.textContent = message;
+        if (type === "sending") {
+            result.className = `text-sm sm:text-base font-medium text-center transition-all duration-300 text-primary`;
+        }
+        if (type === "success") {
+            result.className = `text-sm sm:text-base font-medium text-center transition-all duration-300 text-green-500`;
+        }
+        if (type === "error") {
+            result.className = `text-sm sm:text-base font-medium text-center transition-all duration-300 text-red-500`;
+        }
+    }
+
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const fields = {};
+
+        for (const [key, value] of formData.entries()) {
+            const strValue = value?.toString() || "";
+            if (strValue.trim() !== "") {
+                fields[key] = strValue.trim();
+            }
+        }
+
+        const requiredFields = ["name", "email", "message"];
+        for (const field of requiredFields) {
+            if (!fields[field]) {
+                showMessage({ message: messages.required, type: "error" });
+                return;
+            }
+        }
+
+        showMessage({ message: messages.sending, type: "sending" });
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify(fields),
+            });
+
+            if (response.ok) {
+                showMessage({
+                    message: messages.success,
+                    type: "success",
+                });
+                form.reset();
+            } else {
+                throw new Error("Error al enviar el mensaje");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            showMessage({ message: messages.error, type: "error" });
+        }
+    });
+</script>

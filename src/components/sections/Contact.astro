@@ -1,15 +1,11 @@
 ---
-import Button from "@components/ui/Button.astro";
-import FormContact from "@components/ui/FormContact.astro";
+import Form from "@components/ui/Form.astro";
 import SectionContainer from "@components/ui/SectionContainer.astro";
-
-import Email from "@components/icons/Email.astro";
-import Linkedin from "@components/icons/Linkedin.astro";
 
 import type { ContactSection } from "src/types";
 
 interface Props {
-    i18n: ContactSection;
+	i18n: ContactSection;
 }
 
 const { i18n } = Astro.props;
@@ -25,20 +21,12 @@ const { title, description, form, id } = i18n;
             {description}
         </p>
 
-        <FormContact i18n={form} />
-
-        <div
-            class="flex flex-col flex-wrap items-center justify-center gap-4 mt-10 text-white sm:mt-12 sm:flex-row sm:gap-6"
-        >
-            <Button
-                href="mailto:contact@xitrygame.com"
-                target="_blank"
-                text="contact@xitrygame.com"
-                Icon={Email}
-            />
-        </div>
+        <Form i18n={form} />
     </div>
-    
+
     {/* Borde inferior decorativo */}
-  <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary/20 to-transparent"></div>
+    <div
+        class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary/20 to-transparent"
+    >
+    </div>
 </SectionContainer>
