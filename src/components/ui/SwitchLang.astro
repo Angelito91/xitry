@@ -1,5 +1,10 @@
 ---
-const { currentLocale, url } = Astro;
+interface Props {
+    id: string;
+}
+
+const { id } = Astro.props;
+const { currentLocale } = Astro;
 
 const locales = [
     { code: "es", label: "🇪🇸 ES" },
@@ -10,12 +15,12 @@ const locales = [
 
 <select
     name="locale"
-    id="locale"
+    id={`locale-${id}`}
     aria-label="Select language"
     onchange={`location.href='/' + this.value + '/'`}
     class="px-2 py-1 text-sm font-semibold tracking-wide text-white transition duration-200 bg-transparent border rounded-lg border-white/30 hover:border-white focus:outline-none focus:ring-1 focus:ring-primary"
 >
-    <label for="locale" class="sr-only">Select language</label>
+    <label for={`locale-${id}`} class="sr-only">Select language</label>
     {
         locales.map((locale) => (
             <option

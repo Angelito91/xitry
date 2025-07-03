@@ -9,7 +9,7 @@ const { id, class: className } = Astro.props;
 
 <section
     id={id}
-    class={`relative min-h-screen py-16 px-4 sm:px-6 md:py-20 md:px-8 ${className}`}
+    class={`relative min-h-screen md:min-h-0 xl:min-h-screen py-16 px-4 sm:px-6 md:py-20 md:px-8 ${className}`}
 >
     <slot />
 </section>

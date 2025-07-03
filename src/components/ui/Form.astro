@@ -11,6 +11,7 @@ interface Input {
     label: string;
     placeholder: string | undefined;
     type?: astroHTML.JSX.HTMLInputTypeAttribute;
+    autocomplete?: string;
     required: boolean;
 }
 
@@ -21,6 +22,7 @@ const inputs: Input[] = [
         id: "name",
         label: i18n.name.label,
         placeholder: i18n.name.placeholder,
+        autocomplete: "name",
         type: "text",
         required: true,
     },
@@ -28,6 +30,7 @@ const inputs: Input[] = [
         id: "email",
         label: i18n.email.label,
         placeholder: i18n.email.placeholder,
+        autocomplete: "email",
         type: "email",
         required: true,
     },
@@ -35,6 +38,7 @@ const inputs: Input[] = [
         id: "phone",
         label: i18n.phone.label,
         placeholder: i18n.phone.placeholder,
+        autocomplete: "tel",
         type: "tel",
         required: true,
     },
@@ -42,6 +46,7 @@ const inputs: Input[] = [
         id: "message",
         label: i18n.message.label,
         placeholder: i18n.message.placeholder,
+        autocomplete: "off",
         required: true,
     },
 ];
@@ -75,6 +80,7 @@ const inputs: Input[] = [
                         id={input.id}
                         name={input.id}
                         rows="5"
+                        autocomplete={input.autocomplete}
                         required
                         placeholder={input.placeholder}
                         class="w-full px-4 py-3 text-sm text-white border resize-none bg-white/5 backdrop-blur border-white/10 rounded-xl sm:py-4 focus:outline-none focus:ring-2 focus:ring-primary sm:text-base"
@@ -84,6 +90,7 @@ const inputs: Input[] = [
                         id={input.id}
                         name={input.id}
                         type={input.type}
+                        autocomplete={input.autocomplete}
                         required
                         placeholder={input.placeholder}
                         class="w-full px-4 py-3 text-sm text-white border bg-white/5 backdrop-blur border-white/10 rounded-xl sm:py-4 focus:outline-none focus:ring-2 focus:ring-primary sm:text-base"
