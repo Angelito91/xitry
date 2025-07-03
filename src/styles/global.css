@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-	/* Colores principales */
-	--color-primary:  #ffffff;      /* Blanco puro - textos principales */
-	--color-secondary: #e5e7b1;   /* Gris plateado muy claro - elementos secundarios */
-	--color-accent: #2d2d2d; /* Gris plateado oscuro - acentos */
-	/* Colores de fondo */
-	--color-background: #0a0a0a;    /* Negro puro - fondo principal */
-	--color-background-alt: #171717; /* Gris carbón oscuro - fondo alternativo */
+	--color-primary: #ffffff;
+	--color-secondary: #e5e7b1;
+	--color-accent: #2d2d2d;
+	--color-background: #0a0a0a;
+	--color-background-alt: #171717;
 }
