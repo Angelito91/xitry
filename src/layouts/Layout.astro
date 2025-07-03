@@ -12,12 +12,12 @@ interface Props {
 
 const { url } = Astro;
 const { i18n } = Astro.props;
-const { title, description, keywords, author, sections } = i18n;
+const { title, description, keywords, author, sections, language } = i18n;
 const { header, footer } = sections;
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang={language} class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -27,16 +27,16 @@ const { header, footer } = sections;
 		<meta name="keywords" content={keywords} />
 		<meta name="author" content={author} />
 
-		<link rel="alternate" href={url.href} hreflang="es" />
-		<link rel="alternate" href={`${url.href}/en/`} hreflang="en" />
-		<link rel="alternate" href={`${url.href}/fr/`} hreflang="fr" />
+		<link rel="alternate" href={`${url.href}es/`} hreflang="es" />
+		<link rel="alternate" href={`${url.href}en/`} hreflang="en" />
+		<link rel="alternate" href={`${url.href}fr/`} hreflang="fr" />
 
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content="images/logo.webp" />
 		<meta property="og:url" content={url.href} />
 		<meta property="og:type" content="website" />
-		<meta property="og:locale" content="es_ES" />
+		<meta property="og:locale" content={language} />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,7 +45,9 @@ const { header, footer } = sections;
 			rel="stylesheet"
 		/>
 	</head>
-	<body class="bg-gradient-to-br from-background via-background-alt to-primary/80">
+	<body
+		class="bg-gradient-to-br from-background via-background-alt to-primary/80"
+	>
 		<Header i18n={header} />
 		<slot />
 		<Footer i18n={footer} />
