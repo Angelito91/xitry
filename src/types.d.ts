@@ -1,5 +1,6 @@
 // Secciones superiores
 export interface i18nWebsite {
+	language: string;
 	title: string;
 	description: string;
 	keywords: string;
@@ -115,13 +116,8 @@ interface ContactForm {
 	phone: FormField;
 	message: FormField;
 	submit: FormField;
-	companyName: FormField;
-	userType: FormField;
-	individual: string;
-	company: string;
 	validation: {
 		required: string;
-		phoneInvalid: string;
 		success: string;
 		error: string;
 		sending: string;
