@@ -1,19 +1,19 @@
 ---
+import Lights from "@components/ui/Lights.astro";
 // Imports
 import SectionContainer from "@components/ui/SectionContainer.astro";
 import type { HeroSection } from "src/types";
-import Lights from "@components/ui/Lights.astro";
 // Tipos
 interface Props {
-    i18n: { hero: HeroSection, idSectionContact: string };
+	i18n: { hero: HeroSection; idSectionContact: string };
 }
 
 // Animaciones
 const ANIMATION_DELAYS = {
-    TITLE: "0.1s",
-    DESCRIPTION: "0.3s",
-    BUTTON: "0.5s",
-} as const;
+	TITLE: "0.1s",
+	DESCRIPTION: "0.3s",
+	BUTTON: "0.5s",
+};
 
 // Props
 const { i18n } = Astro.props;
@@ -67,7 +67,7 @@ const { title, description, button, id } = i18n.hero;
 
                 <div class="relative aspect-video overflow-hidden rounded-xl">
                     <iframe
-                        src="https://player.vimeo.com/video/1087400776?autoplay=1&loop=1&muted=1&background=1&quality=1080p"
+                        src="https://player.vimeo.com/video/1087400776?dnt=1&autoplay=1&loop=1&muted=1&background=1&quality=auto"
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                         class="w-full h-full object-cover"
                         title="Rizzita toma su reposo"></iframe>
