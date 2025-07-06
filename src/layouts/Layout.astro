@@ -20,7 +20,11 @@ const { header, footer } = sections;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="https://xitry-game.com/favicon.ico" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="https://xitry-game.com/favicon.ico"
+		/>
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		<meta name="keywords" content={keywords} />
@@ -96,9 +100,9 @@ const { header, footer } = sections;
 	<body
 		class="bg-gradient-to-br from-background via-background-alt to-primary/80"
 	>
-		<Header i18n={header} />
+		<Header i18n={header} language={language} />
 		<slot />
-		<Footer i18n={footer} />
+		<Footer i18n={footer} language={language} />
 	</body>
 </html>
 

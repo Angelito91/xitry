@@ -15,9 +15,10 @@ import Services from "@components/icons/Services.astro";
 
 interface Props {
     i18n: HeaderSection;
+    language: string;
 }
 
-const { i18n } = Astro.props;
+const { i18n, language } = Astro.props;
 
 const navLinks = i18n.navLinks;
 const indexContact = navLinks.length - 1;
@@ -114,7 +115,7 @@ const normalize = (link: string) => {
 >
     <nav class="flex items-center justify-between w-full">
         <a
-            href={`#${navLinks[0]}`}
+            href={`https://xitry-game.com/${language}#${navLinks[0]}`}
             aria-label={navLinks[0]}
             class="flex items-center justify-center text-lg font-bold transition hover:scale-110 hover:rotate-1"
         >
@@ -135,7 +136,7 @@ const normalize = (link: string) => {
             {
                 navLinksSlice.map((link) => (
                     <a
-                        href={`#${link}`}
+                        href={`https://xitry-game.com/${language}#${link}`}
                         aria-label={link}
                         class="p-2 capitalize transition transform rounded-xl hover:bg-secondary/20 hover:scale-110 hover:rotate-1"
                     >
@@ -150,7 +151,7 @@ const normalize = (link: string) => {
                 class="flex items-center justify-center gap-2 p-2 nav-links rounded-xl bg-accent/70"
             >
                 <a
-                    href={`#${navLinks[indexContact]}`}
+                    href={`https://xitry-game.com/${language}#${navLinks[indexContact]}`}
                     aria-label={navLinks[indexContact]}
                     class="p-2 capitalize transition transform rounded-xl hover:bg-primary/20 hover:scale-110 hover:rotate-1"
                 >
@@ -184,7 +185,7 @@ const normalize = (link: string) => {
             {
                 navLinks.map((link) => (
                     <a
-                        href={`#${link}`}
+                        href={`https://xitry-game.com/${language}#${link}`}
                         aria-label={link}
                         class="flex justify-center items-center gap-3 p-2 text-lg text-white capitalize transition rounded hover:bg-secondary/20"
                     >
